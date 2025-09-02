@@ -1,142 +1,80 @@
 🌐 提供语言: [English](README.md) | [فارسی](README_FA.md) | [Русский](README_ru.md) | [中文](README_zh.md)
 
-# 🌍 ConfigForge V2Ray（中文） 
+# 🌍 ConfigForge V2Ray（中文）
 
-**ConfigForge V2Ray（中文）** is an advanced open-source platform that aggregates and optimizes V2Ray VPN configurations from multiple sources.  
-It automatically detects your country and suggests the **fastest configurations**, verified through **Check-Host API latency testing**, to ensure the best connection speed and reliability.
+**ConfigForge V2Ray** 是一个先进的开源平台，用于收集和优化来自多个来源的 V2Ray 配置。  
+系统会自动检测您的所在地区，并推荐 **最快的节点**，通过 **Check-Host API 延迟测试** 验证，确保速度和稳定性。
 
 ---
 
-## 🌐 Access the Web Interface
+## 🌐 网页界面
 
 ### 香港快速订阅（直接链接）
-Use these **global** subscription URLs in any V2Ray-compatible client (v2rayNG, V2RayN, Shadowrocket, etc.).  
-Click a link and copy the URL into your client’s **Subscriptions** section.
+这些链接可以在任何支持 V2Ray 的客户端中使用（如 v2rayNG、V2RayN、Shadowrocket 等）。  
+复制链接并粘贴到客户端的 **Subscriptions** 中即可。
 
-| File | Description | Direct |
+| 文件 | 描述 | 链接 |
 |---|---|---|
-| `all.txt` | Full global list (ranked by average latency) | [Open](https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/hk/all.txt) · [Mirror](https://cdn.jsdelivr.net/gh/ShatakVPN/ConfigForge-V2Ray@main/configs/hk/all.txt) |
-| `light.txt` | Top 30 fastest global configs | [Open](https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/hk/light.txt) · [Mirror](https://cdn.jsdelivr.net/gh/ShatakVPN/ConfigForge-V2Ray@main/configs/hk/light.txt) |
-| `vless.txt` | Global VLESS-only list | [Open](https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/hk/vless.txt) · [Mirror](https://cdn.jsdelivr.net/gh/ShatakVPN/ConfigForge-V2Ray@main/configs/hk/vless.txt) |
-| `vmess.txt` | Global VMess-only list | [Open](https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/hk/vmess.txt) · [Mirror](https://cdn.jsdelivr.net/gh/ShatakVPN/ConfigForge-V2Ray@main/configs/hk/vmess.txt) |
-| `shadowsocks.txt` | Global Shadowsocks-only list | [Open](https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/hk/shadowsocks.txt) · [Mirror](https://cdn.jsdelivr.net/gh/ShatakVPN/ConfigForge-V2Ray@main/configs/hk/shadowsocks.txt) |
-| `trojan.txt` | Global Trojan-only list | [Open](https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/hk/trojan.txt) · [Mirror](https://cdn.jsdelivr.net/gh/ShatakVPN/ConfigForge-V2Ray@main/configs/hk/trojan.txt) |
-| `unknown.txt` | Other/unknown protocols | [Open](https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/hk/unknown.txt) · [Mirror](https://cdn.jsdelivr.net/gh/ShatakVPN/ConfigForge-V2Ray@main/configs/hk/unknown.txt) |
-
-<details>
-<summary><strong>Show raw URLs (copy/paste)</strong></summary>
-
-```
-https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/hk/all.txt
-https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/hk/light.txt
-https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/hk/vless.txt
-https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/hk/vmess.txt
-https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/hk/shadowsocks.txt
-https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/hk/trojan.txt
-https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/hk/unknown.txt
-```
-
-_Mirrors (jsDelivr):_
-
-```
-https://cdn.jsdelivr.net/gh/ShatakVPN/ConfigForge-V2Ray@main/configs/hk/all.txt
-https://cdn.jsdelivr.net/gh/ShatakVPN/ConfigForge-V2Ray@main/configs/hk/light.txt
-https://cdn.jsdelivr.net/gh/ShatakVPN/ConfigForge-V2Ray@main/configs/hk/vless.txt
-https://cdn.jsdelivr.net/gh/ShatakVPN/ConfigForge-V2Ray@main/configs/hk/vmess.txt
-https://cdn.jsdelivr.net/gh/ShatakVPN/ConfigForge-V2Ray@main/configs/hk/shadowsocks.txt
-https://cdn.jsdelivr.net/gh/ShatakVPN/ConfigForge-V2Ray@main/configs/hk/trojan.txt
-https://cdn.jsdelivr.net/gh/ShatakVPN/ConfigForge-V2Ray@main/configs/hk/unknown.txt
-```
-</details>
-
-For the easiest experience, use our **modern multi-language web interface**:  
-➡️ **[https://shatakvpn.github.io/ConfigForge-V2Ray/](https://shatakvpn.github.io/ConfigForge-V2Ray/)**
+| `all.txt` | 香港完整列表（按延迟排序） | [打开](https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/hk/all.txt) · [镜像](https://cdn.jsdelivr.net/gh/ShatakVPN/ConfigForge-V2Ray@main/configs/hk/all.txt) |
+| `light.txt` | 香港最快 30 个节点 | [打开](https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/hk/light.txt) · [镜像](https://cdn.jsdelivr.net/gh/ShatakVPN/ConfigForge-V2Ray@main/configs/hk/light.txt) |
+| `vless.txt` | 仅 VLESS | [打开](https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/hk/vless.txt) · [镜像](https://cdn.jsdelivr.net/gh/ShatakVPN/ConfigForge-V2Ray@main/configs/hk/vless.txt) |
+| `vmess.txt` | 仅 VMess | [打开](https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/hk/vmess.txt) · [镜像](https://cdn.jsdelivr.net/gh/ShatakVPN/ConfigForge-V2Ray@main/configs/hk/vmess.txt) |
+| `shadowsocks.txt` | 仅 Shadowsocks | [打开](https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/hk/shadowsocks.txt) · [镜像](https://cdn.jsdelivr.net/gh/ShatakVPN/ConfigForge-V2Ray@main/configs/hk/shadowsocks.txt) |
+| `trojan.txt` | 仅 Trojan | [打开](https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/hk/trojan.txt) · [镜像](https://cdn.jsdelivr.net/gh/ShatakVPN/ConfigForge-V2Ray@main/configs/hk/trojan.txt) |
+| `unknown.txt` | 其他/未知协议 | [打开](https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/hk/unknown.txt) · [镜像](https://cdn.jsdelivr.net/gh/ShatakVPN/ConfigForge-V2Ray@main/configs/hk/unknown.txt) |
 
 ---
 
-## 🚀 Why ConfigForge?
-Unlike basic config repositories, **ConfigForge V2Ray（中文）**:
-- ✅ Continuously fetches configs from **multiple sources**
-- ✅ **Tests latency for each country** using [Check-Host API](https://check-host.net/)
-- ✅ Suggests **the fastest servers** for your location
-- ✅ Provides **aggregated, lightweight, and categorized configs** (VLESS, VMess, Shadowsocks, Trojan)
-- ✅ Runs **automatically with GitHub Actions** – no server required!
+## 🚀 为什么选择 ConfigForge?
+与普通的配置仓库不同，**ConfigForge V2Ray**：
+- ✅ 持续从多个来源获取配置  
+- ✅ 使用 [Check-Host API](https://check-host.net/) 测试延迟  
+- ✅ 根据地区推荐最快的服务器  
+- ✅ 提供分类好的订阅文件（VLESS、VMess、Shadowsocks、Trojan）  
+- ✅ 通过 GitHub Actions 自动运行，无需服务器！
 
 ---
 
-## ✨ Features
-- 🌍 **Country-based selection** – Automatically detect your location or choose manually  
-- 🔍 **Latency-tested recommendations** – Get only the **fastest working configs** for your country  
-- 🌐 **Multi-language support** – Dynamic translation of the entire interface  
-- 📂 **Subscription files available**:
-  - `all.txt` → Full list of configs
-  - `light.txt` → Top 30 fastest configs
-  - Individual files for each protocol (VLESS, VMess, Shadowsocks, Trojan)
-- 🔄 **Auto-updates via GitHub Actions**
-- ⚡ **Optimized for speed and simplicity**
-- 🛠 **Easy to extend** for new protocols or sources
+## ✨ 功能特点
+- 🌍 国家/地区选择 — 自动检测或手动选择  
+- 🔍 延迟测试推荐 — 只保留最快可用节点  
+- 🌐 多语言支持  
+- 📂 订阅文件：  
+  - `all.txt` → 完整列表  
+  - `light.txt` → 前 30 个节点  
+  - 各协议单独文件 (VLESS, VMess, Shadowsocks, Trojan)  
+- 🔄 自动更新（GitHub Actions）  
+- ⚡ 简单快速  
+- 🛠 易于扩展和定制  
 
 ---
 
-## ✅ Additional Features:
-- Download VPN config lists from multiple sources  
-- Parse and categorize configs by protocol  
-- Generate aggregated and lightweight subscription files  
-- Auto commit and push updates to GitHub  
-- Fully customizable structure for advanced users  
+## 🛠 使用方法
 
----
-
-## 🛠 How to Use
-
-### ✅ Option 1: Run Locally
-Clone the repository:
+### ✅ 方式一：本地运行
+克隆仓库：
 ```bash
 git clone https://github.com/ShatakVPN/ConfigForge.git
 cd ConfigForge
 ```
 
-Install dependencies:
+安装依赖：
 ```bash
 pip install -r source/requirements.txt
 ```
 
-Run the main script:
+运行：
 ```bash
 python source/main.py
 ```
 
----
-
-### ✅ Option 2: Run Automatically on GitHub (Serverless)
-You can **fork this repository** and let **GitHub Actions** handle everything for you!  
-
-1. **Fork this repository** to your own GitHub account.  
-2. **Create a Personal Access Token (PAT)** and add it as a secret:  
-   - Go to **Settings → Secrets → Actions**  
-   - Add a new secret named **`PAT_TOKEN`** with your token value.  
-3. **Enable the included workflow**:
-```bash
-.github/workflows/update.yml
-```
-4. Done! The workflow will automatically:  
-   - Download and update VPN configs  
-   - Commit changes to your forked repo  
-   - Run on a schedule — completely **serverless**!  
+### ✅ 方式二：在 GitHub 上自动运行（无需服务器）
+只需 **Fork** 仓库并启用 GitHub Actions，一切将自动完成！  
 
 ---
-## ⭐ Repository Popularity
-[![Stargazers over time](https://starchart.cc/ShatakVPN/ConfigForge-V2Ray.svg?variant=adaptive)](https://starchart.cc/ShatakVPN/ConfigForge-V2Ray)
 
-<p align="center">
-  <img src="https://img.shields.io/github/stars/ShatakVPN/ConfigForge?style=for-the-badge&color=yellow" alt="Stars" />
-  <img src="https://img.shields.io/github/forks/ShatakVPN/ConfigForge?style=for-the-badge&color=blue" alt="Forks" />
-  <img src="https://img.shields.io/github/last-commit/ShatakVPN/ConfigForge?style=for-the-badge&color=brightgreen" alt="Last Commit" />
-  <img src="https://img.shields.io/github/license/ShatakVPN/ConfigForge?style=for-the-badge&color=orange" alt="License" />
-  <img src="https://img.shields.io/github/languages/top/ShatakVPN/ConfigForge?style=for-the-badge&color=purple" alt="Top Language" />
-</p>
+## ⭐ 项目人气
+![Stargazers over time](https://starchart.cc/ShatakVPN/ConfigForge-V2Ray.svg?variant=adaptive)
 
 ---
-This project is licensed under the **GPL-3.0 License**.  
-
-### ❤️ Built with love by [ShatakVPN](https://github.com/ShatakVPN)
+本项目使用 **GPL-3.0 协议** 发布。  
