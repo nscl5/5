@@ -1,3 +1,5 @@
+🌐 Available in: [English](README.md) | [فارسی](README_FA.md) | [Русский](README_ru.md) | [中文](README_zh.md)
+
 # 🌍 ConfigForge V2Ray 
 
 **ConfigForge V2Ray** is an advanced open-source platform that aggregates and optimizes V2Ray VPN configurations from multiple sources.  
