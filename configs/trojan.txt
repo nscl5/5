@@ -1,7 +1,7 @@
-trojan://f282b878-8711-45a1-8c69-5564172123c1@172.67.181.173:443?path=%2FStupid-World%2F103.106.228.126-2053&security=tls&host=vpn.stupidworld.web.id&fp=chrome&type=ws&sni=vpn.stupidworld.web.id#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20815579
-trojan://253bc477d4e43c209f2d427272968280@218.102.206.179:443?allowInsecure=1&sni=23.45.86.28#%F0%9F%87%AD%F0%9F%87%B0%20ShatakVPN%20397159
-trojan://253bc477d4e43c209f2d427272968280@219.77.131.1:443?sni=23.45.86.28#%F0%9F%87%AD%F0%9F%87%B0%20ShatakVPN%20493355
-trojan://2ee85121-31de-4581-a492-eb00f606e392@103.252.116.138:443?allowInsecure=0&sni=hk.freeguard.org#%F0%9F%87%AD%F0%9F%87%B0%20ShatakVPN%20613911
-trojan://vpn@45.82.14.144:2025?security=none&type=ws&host=dns.google.com&path=%2F#%F0%9F%87%B0%F0%9F%87%BF%20ShatakVPN%20634472
-trojan://slch2024@209.94.90.195:2096?allowInsecure=0&sni=ocost-dy.wmlefl.cc&type=ws&host=ocost-dy.wmlefl.cc&path=/Telegram🇨🇳#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20814780
-trojan://1ce1df7962f71c6f@51.195.255.103:8443?security=tls&headerType=none&type=tcp&sni=uk-03.allhubb.info#%F0%9F%87%AC%F0%9F%87%A7%20ShatakVPN%20342551
+trojan://f282b878-8711-45a1-8c69-5564172123c1@172.67.181.173:443?path=%2FStupid-World%2F103.106.228.126-2053&security=tls&host=vpn.stupidworld.web.id&fp=chrome&type=ws&sni=vpn.stupidworld.web.id#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20389300
+trojan://253bc477d4e43c209f2d427272968280@218.102.206.179:443?allowInsecure=1&sni=23.45.86.28#%F0%9F%87%AD%F0%9F%87%B0%20ShatakVPN%20333686
+trojan://253bc477d4e43c209f2d427272968280@219.77.131.1:443?sni=23.45.86.28#%F0%9F%87%AD%F0%9F%87%B0%20ShatakVPN%20598728
+trojan://2ee85121-31de-4581-a492-eb00f606e392@103.252.116.138:443?allowInsecure=0&sni=hk.freeguard.org#%F0%9F%87%AD%F0%9F%87%B0%20ShatakVPN%20334586
+trojan://vpn@45.82.14.144:2025?security=none&type=ws&host=dns.google.com&path=%2F#%F0%9F%87%B0%F0%9F%87%BF%20ShatakVPN%20323041
+trojan://slch2024@209.94.90.195:2096?allowInsecure=0&sni=ocost-dy.wmlefl.cc&type=ws&host=ocost-dy.wmlefl.cc&path=/Telegram🇨🇳#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20809730
+trojan://1ce1df7962f71c6f@51.195.255.103:8443?security=tls&headerType=none&type=tcp&sni=uk-03.allhubb.info#%F0%9F%87%AC%F0%9F%87%A7%20ShatakVPN%20283380
