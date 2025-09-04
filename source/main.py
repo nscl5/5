@@ -256,6 +256,21 @@ def extract_host(link: str, proto: str) -> str:
 
 _connection_limit = asyncio.Semaphore(10)
 
+# --- helpers to validate readiness of check-result ---
+
+def _has_ok(data: dict) -> bool:
+    if not isinstance(data, dict):
+        return False
+    for entries in data.values():
+        try:
+            for status, ping in entries[0]:
+                if status == "OK":
+                    return True
+        except Exception:
+            # try dict-shaped entries fallback handled elsewhere
+            pass
+    return False
+
 async def run_ping_once(client: httpx.AsyncClient, host: str, timeout: int = 45, retries: int = 3) -> dict:
     """
     Ping a host via check-host.net with retries.
@@ -275,9 +290,9 @@ async def run_ping_once(client: httpx.AsyncClient, host: str, timeout: int = 45,
                     headers={"Accept": "application/json"},
                     timeout=timeout,
                 )
-                if r1.status_code == 503:
+                if r1.status_code in (429, 503):
                     wait = random.uniform(2, 5)
-                    logging.warning(f"503 for {host}, retry {attempt}/{retries} after {wait:.1f}s")
+                    logging.warning(f"{r1.status_code} for {host}, retry {attempt}/{retries} after {wait:.1f}s")
                     await asyncio.sleep(wait)
                     continue
 
@@ -286,15 +301,40 @@ async def run_ping_once(client: httpx.AsyncClient, host: str, timeout: int = 45,
                 if not req_id:
                     return {}
 
-                for _ in range(45):
+                # small initial wait before first result fetch
+                await asyncio.sleep(4)
+
+                max_polls = 45  # ~135s with sleep=3
+                got_partial_any = False
+                last_data = {}
+                for i in range(max_polls):
                     await asyncio.sleep(3)
-                    r2 = await client.get(
-                        f"{base}/check-result/{req_id}",
-                        headers={"Accept": "application/json"},
-                        timeout=timeout,
-                    )
-                    if r2.status_code == 200 and r2.json():
-                        return r2.json()
+                    try:
+                        r2 = await client.get(
+                            f"{base}/check-result/{req_id}",
+                            headers={"Accept": "application/json"},
+                            timeout=timeout,
+                        )
+                        if r2.status_code in (429, 503):
+                            await asyncio.sleep(3 + random.random() * 2)
+                            continue
+                        r2.raise_for_status()
+                        data = r2.json()
+                        if data:
+                            got_partial_any = True
+                            last_data = data
+                            if _has_ok(data):
+                                return data
+                        # else keep polling
+                    except httpx.ReadTimeout:
+                        continue
+                    except Exception as e:
+                        logging.debug(f"check-result error for {host}: {e}")
+                        continue
+
+                # no OK but had some partial data
+                if got_partial_any:
+                    return last_data
                 break
 
             except Exception as e:
@@ -302,6 +342,26 @@ async def run_ping_once(client: httpx.AsyncClient, host: str, timeout: int = 45,
                 await asyncio.sleep(2)
 
     return {}
+
+# --- entries parsing that tolerates alternate shapes ---
+
+def _iter_ok_pings(entries):
+    # classic shape: entries[0] = [["OK", 12.3], ["ERR", ...], ...]
+    try:
+        for status, ping in entries[0]:
+            if status == "OK":
+                yield float(ping)
+        return
+    except Exception:
+        pass
+    # alternative: list of dicts like {status: "OK", time: 12.3}
+    try:
+        for row in entries:
+            if isinstance(row, dict) and row.get("status") == "OK":
+                yield float(row.get("time", 0))
+    except Exception:
+        return
+
 
 def extract_latency_by_country(results: dict, country_nodes: dict[str, list[str]]) -> dict[str, float]:
     """
@@ -313,14 +373,11 @@ def extract_latency_by_country(results: dict, country_nodes: dict[str, list[str]
         pings: list[float] = []
         for node in nodes:
             entries = results.get(node, [])
-            try:
-                for status, ping in entries[0]:
-                    if status == "OK":
-                        pings.append(ping)
-            except Exception:
-                continue
+            for ping in _iter_ok_pings(entries):
+                pings.append(ping)
         latencies[country] = (sum(pings) / len(pings)) if pings else float("inf")
     return latencies
+
 
 def extract_latency_global(results: dict) -> float:
     """
@@ -329,13 +386,10 @@ def extract_latency_global(results: dict) -> float:
     """
     pings: list[float] = []
     for node, entries in (results or {}).items():
-        try:
-            for status, ping in entries[0]:
-                if status == "OK":
-                    pings.append(ping)
-        except Exception:
-            continue
+        for ping in _iter_ok_pings(entries):
+            pings.append(ping)
     return (sum(pings) / len(pings)) if pings else float("inf")
+
 
 async def get_nodes_by_country(client: httpx.AsyncClient) -> dict[str, list[str]]:
     """
@@ -343,7 +397,7 @@ async def get_nodes_by_country(client: httpx.AsyncClient) -> dict[str, list[str]
     """
     url = "https://check-host.net/nodes/hosts"
     try:
-        r = await client.get(url, timeout=20)
+        r = await client.get(url, headers={"Accept": "application/json"}, timeout=20)
         r.raise_for_status()
         data = r.json()
     except Exception as e:
@@ -603,8 +657,6 @@ async def main_async():
                 save_to_file(path, [])
 
         # 5) --------- COUNTRY OUTPUTS (same behavior as before) ----------
-        # Note: original code placed every link into every country group; we keep it
-        #       so sorting differs per country based on per-country latencies.
         # Build a quick index: for each host, we already have full results.
         for country, nodes in country_nodes.items():
             logging.info(f"Processing country: {country}")
