@@ -258,22 +258,32 @@ def extract_host(link: str, proto: str) -> str:
 _connection_limit = asyncio.Semaphore(10)
 
 def _has_ok(data: dict) -> bool:
+    """True if any node entry contains at least one OK measurement.
+    Accept both shapes: entries[0] = [[status, time, *opt], ...] or list of dicts.
+    """
     if not isinstance(data, dict):
         return False
     for entries in data.values():
         try:
-            for status, ping in entries[0]:
-                if status == "OK":
+            if not entries:
+                continue
+            first = entries[0]
+            if isinstance(first, (list, tuple)):
+                for row in first:
+                    if isinstance(row, (list, tuple)) and row and row[0] == "OK":
+                        return True
+            for row in entries:
+                if isinstance(row, dict) and row.get("status") == "OK":
                     return True
         except Exception:
-            pass
+            continue
     return False
 
 async def run_ping_once(client: httpx.AsyncClient, host: str, timeout: int = 45, retries: int = 3) -> dict:
     """
     Ping a host via check-host.net with retries.
-    'host' must be a plain host/IP (no userinfo, no port).
-    Returns the raw JSON map of node -> results.
+    Returns a dict: {"results": <node->entries map>, "node_cc": <node->cc map>}
+    Host must be plain (no userinfo/port).
     """
     if not host:
         return {}
@@ -295,16 +305,32 @@ async def run_ping_once(client: httpx.AsyncClient, host: str, timeout: int = 45,
                     continue
 
                 r1.raise_for_status()
-                req_id = r1.json().get("request_id")
+                j1 = r1.json()
+                req_id = j1.get("request_id")
                 if not req_id:
                     return {}
 
+                # Build node->cc map from this specific check-ping response
+                nodes_map: dict[str, str] = {}
+                nodes_json = j1.get("nodes", {}) or {}
+                for node, arr in nodes_json.items():
+                    cc = None
+                    try:
+                        if isinstance(arr, (list, tuple)) and arr:
+                            cc = str(arr[0]).lower()
+                    except Exception:
+                        pass
+                    base_node = node.split("/", 1)[0].split(":", 1)[0].lower()
+                    if cc:
+                        nodes_map[base_node] = cc
+
+                # initial wait
                 await asyncio.sleep(4)
 
                 max_polls = 45  # ~135s with sleep=3
                 got_partial_any = False
                 last_data = {}
-                for i in range(max_polls):
+                for _ in range(max_polls):
                     await asyncio.sleep(3)
                     try:
                         r2 = await client.get(
@@ -316,12 +342,12 @@ async def run_ping_once(client: httpx.AsyncClient, host: str, timeout: int = 45,
                             await asyncio.sleep(3 + random.random() * 2)
                             continue
                         r2.raise_for_status()
-                        data = r2.json()
+                        data = r2.json() or {}
                         if data:
                             got_partial_any = True
                             last_data = data
                             if _has_ok(data):
-                                return data
+                                return {"results": data, "node_cc": nodes_map}
                     except httpx.ReadTimeout:
                         continue
                     except Exception as e:
@@ -329,7 +355,7 @@ async def run_ping_once(client: httpx.AsyncClient, host: str, timeout: int = 45,
                         continue
 
                 if got_partial_any:
-                    return last_data
+                    return {"results": last_data, "node_cc": nodes_map}
                 break
 
             except Exception as e:
@@ -341,27 +367,42 @@ async def run_ping_once(client: httpx.AsyncClient, host: str, timeout: int = 45,
 # --- entries parsing that tolerates alternate shapes ---
 
 def _iter_ok_pings(entries):
-    # classic shape: entries[0] = [["OK", 12.3], ["ERR", ...], ...]
+    """Yield ping times (seconds) for OK rows across both API shapes."""
+    if entries is None:
+        return
+    # classic/list shape under entries[0]
     try:
-        for status, ping in entries[0]:
-            if status == "OK":
-                yield float(ping)
+        seq = entries[0]
+        if isinstance(seq, (list, tuple)):
+            for row in seq:
+                if isinstance(row, (list, tuple)) and row and row[0] == "OK":
+                    if len(row) >= 2:
+                        try:
+                            yield float(row[1])
+                        except Exception:
+                            continue
         return
     except Exception:
         pass
-    # alternative: list of dicts like {status: "OK", time: 12.3}
+    # list-of-dicts fallback
     try:
         for row in entries:
             if isinstance(row, dict) and row.get("status") == "OK":
-                yield float(row.get("time", 0))
+                t = row.get("time")
+                if t is not None:
+                    try:
+                        yield float(t)
+                    except Exception:
+                        continue
     except Exception:
         return
 
-# ============================== Node Maps ==================================
+# ============================== Node Maps / Latency ========================
 
 async def get_nodes_by_country(client: httpx.AsyncClient) -> dict[str, list[str]]:
     """
     Fetch check-host nodes and group them by country code.
+    (Used to decide which country folders to emit; per-host mapping comes from check-ping.)
     """
     url = "https://check-host.net/nodes/hosts"
     try:
@@ -380,39 +421,39 @@ async def get_nodes_by_country(client: httpx.AsyncClient) -> dict[str, list[str]
     return mapping
 
 def _derive_cc_from_node(node: str) -> str:
-    # normalize node id (strip ports, paths)
     node = node.split("/", 1)[0].split(":", 1)[0].lower()
-    # take first label before dot and its first 2 letters if alpha
     first = node.split(".", 1)[0]
     m = re.match(r"^([a-z]{2})", first)
     return m.group(1) if m else ""
 
 def latencies_by_cc_from_results(results: dict, node_to_cc: dict[str, str]) -> dict[str, float]:
-    """
-    Build avg latency per country-code by scanning result nodes and mapping them to cc.
-    Uses explicit node_to_cc if available; falls back to deriving cc from node id prefix.
+    """Average latency per country-code from a single host's results.
+    Prefer explicit node_to_cc mapping from the same request; fall back to deriving from node id.
     """
     pings_by_cc: dict[str, list[float]] = defaultdict(list)
     for node, entries in (results or {}).items():
-        cc = node_to_cc.get(node)
+        base_node = node.split("/", 1)[0].split(":", 1)[0]
+        cc = node_to_cc.get(base_node)
         if not cc:
-            # try normalized lookup
-            key = node.split("/",1)[0].split(":",1)[0]
-            cc = node_to_cc.get(key, "")
-        if not cc:
-            cc = _derive_cc_from_node(node)
+            cc = _derive_cc_from_node(base_node)
         if not cc:
             continue
         for ping in _iter_ok_pings(entries):
             pings_by_cc[cc].append(ping)
     return {cc: (sum(v)/len(v)) if v else float("inf") for cc, v in pings_by_cc.items()}
 
+def extract_latency_global(results: dict) -> float:
+    """Compute global average latency across all nodes for a single host."""
+    pings: list[float] = []
+    for node, entries in (results or {}).items():
+        for ping in _iter_ok_pings(entries):
+            pings.append(ping)
+    return (sum(pings) / len(pings)) if pings else float("inf")
+
 # ============================== Output =====================================
 
 def save_to_file(path: str, lines: list[str]):
-    """
-    Save a list of configuration lines to a file, creating directories if needed.
-    """
+    """Save a list of configuration lines to a file."""
     if not lines:
         logging.warning(f"No lines to save: {path}")
         return
@@ -424,9 +465,6 @@ def save_to_file(path: str, lines: list[str]):
 # ============================== Renaming ===================================
 
 def _build_tag(ip: str) -> str:
-    """
-    Build a uniform display name: <flag> ShatakVPN <random>.
-    """
     country = get_country_by_ip(ip)
     flag = country_flag(country)
     return f"{flag} ShatakVPN {random.randint(100000, 999999)}"
@@ -435,9 +473,6 @@ def is_valid_hostname(label: str) -> bool:
     return re.fullmatch(r"[A-Za-z0-9.-]+", label or "") is not None
 
 def _resolve_host(host: str) -> str:
-    """
-    Resolve a hostname to IPv4; if input is already an IP (v4/v6) or invalid hostname, return as-is.
-    """
     host = host.strip()
     if not host:
         return host
@@ -453,7 +488,6 @@ def _resolve_host(host: str) -> str:
         return host
 
 def rename_vmess(link: str, ip: str, port: str, tag: str) -> str:
-    """Update vmess JSON (add/port/ps) and keep a fragment for clients that display it."""
     try:
         raw = link.split("://", 1)[1]
         cfg = json.loads(b64_decode(raw))
@@ -465,16 +499,10 @@ def rename_vmess(link: str, ip: str, port: str, tag: str) -> str:
         return link
 
 def rename_shadowsocks(link: str, ip: str, port: str, tag: str) -> str:
-    """
-    Support both SS forms:
-    - ss://base64(method:password)@host:port#name
-    - ss://base64(method:password@host:port)#name
-    """
     try:
         body = link.split("ss://", 1)[1]
         if "#" in body:
             body = body.split("#", 1)[0]
-
         method = pwd = None
         if "@" in body:
             creds_part, _hostport = body.split("@", 1)
@@ -492,10 +520,8 @@ def rename_shadowsocks(link: str, ip: str, port: str, tag: str) -> str:
                     method, pwd = decoded.split(":", 1)
             except Exception:
                 pass
-
         if not (method and pwd):
             return link
-
         new_creds = b64_encode(f"{method}:{pwd}")
         hp = format_hostport(ip, port or "443")
         return f"ss://{new_creds}@{hp}#{quote(tag)}"
@@ -504,12 +530,10 @@ def rename_shadowsocks(link: str, ip: str, port: str, tag: str) -> str:
         return link
 
 def rename_ssr(link: str, ip: str, port: str, tag: str) -> str:
-    """Rewrite SSR main section host:port; if IPv6, keep original (SSR format is IPv4-centric)."""
     try:
         if ":" in ip and not ip.startswith("["):
             logging.debug("SSR IPv6 host detected; skipping rename to avoid ambiguity.")
             return link
-
         raw = link.split("ssr://", 1)[1]
         decoded = b64url_decode(raw).decode(errors="ignore")
         parts = decoded.split("/?", 1)
@@ -529,13 +553,6 @@ def rename_ssr(link: str, ip: str, port: str, tag: str) -> str:
         return link
 
 def rename_url_like(link: str, ip: str, port: str, tag: str) -> str:
-    """
-    Generic URL-style replacer:
-    - Preserve userinfo if present
-    - Replace host:port (with IPv6 brackets when needed)
-    - Preserve path/query
-    - Replace fragment with encoded tag
-    """
     try:
         p = urlsplit(link)
         hostport = p.netloc
@@ -562,7 +579,6 @@ def _rename_cached(link: str, ip: str, port: str, tag: str, proto: str) -> str:
     return rename_url_like(link, ip, port, tag)
 
 def rename_line(link: str) -> str:
-    """Route to protocol-specific renamers; default to URL-like behavior."""
     proto = detect_protocol(link)
     host_port = extract_host(link, proto)
     if not host_port:
@@ -587,14 +603,8 @@ async def main_async():
     logging.info(f"[{now}] Starting download and processing…")
 
     async with httpx.AsyncClient() as client:
-        # 1) Discover nodes per country (used for country sorting)
+        # 1) Discover nodes per country (used to decide which country folders to emit)
         country_nodes = await get_nodes_by_country(client)
-        # Build reverse map node -> cc for robust matching
-        node_country: dict[str, str] = {}
-        for cc, nodes in country_nodes.items():
-            for node in nodes:
-                base_node = node.split("/",1)[0].split(":",1)[0].lower()
-                node_country[base_node] = cc.lower()
 
         # 2) Fetch all raw configs and collect (link, host) pairs
         all_pairs: list[tuple[str, str]] = []
@@ -602,7 +612,6 @@ async def main_async():
             blob = maybe_base64_decode(fetch_data(url))
             configs = re.findall(r"[a-zA-Z][\w+.-]*://[^\s]+", blob)
             logging.info(f"Fetched {url} → {len(configs)} configs")
-
             for link in configs:
                 proto = detect_protocol(link)
                 hostport = extract_host(link, proto)
@@ -621,28 +630,34 @@ async def main_async():
         hosts = sorted({h for _, h in all_pairs if h})
         tasks = [run_ping_once(client, h) for h in hosts]
         ping_results = await asyncio.gather(*tasks)
-        results_by_host = dict(zip(hosts, ping_results))
+
+        results_by_host: dict[str, dict] = {}
+        node_cc_by_host: dict[str, dict] = {}
+        for h, item in zip(hosts, ping_results):
+            if isinstance(item, dict) and ("results" in item or "node_cc" in item):
+                results_by_host[h] = item.get("results") or {}
+                node_cc_by_host[h] = item.get("node_cc") or {}
+            else:
+                # backward compatibility: treat entire item as results
+                results_by_host[h] = item or {}
+                node_cc_by_host[h] = {}
 
         # Helper: map host -> global avg latency
         host_global_lat: dict[str, float] = {
             h: extract_latency_global(results_by_host.get(h, {})) for h in hosts
         }
 
-        # 4) --------- GLOBAL OUTPUTS (root of OUTPUT_DIR) ----------
-        # Compute per-link latency based on *global* average across all nodes
+        # 4) --------- GLOBAL OUTPUTS ----------
         link_global_lat: dict[str, float] = {}
         for link, host in all_pairs:
             lat = host_global_lat.get(host, float("inf"))
             link_global_lat[link] = min(link_global_lat.get(link, float("inf")), lat)
 
-        # Rank globally
         sorted_global_links = [l for l, _ in sorted(link_global_lat.items(), key=lambda x: x[1])]
         renamed_global = [rename_line(l) for l in sorted_global_links]
 
-        # Global per-protocol splits
         grouped_global = group_by_protocol(sorted_global_links)
 
-        # Write root files (global)
         save_to_file(os.path.join(OUTPUT_DIR, "all.txt"), renamed_global)
         save_to_file(os.path.join(OUTPUT_DIR, "light.txt"), renamed_global[:30])
 
@@ -652,24 +667,24 @@ async def main_async():
                 [rename_line(l) for l in proto_links]
             )
 
-        # Ensure a consistent set even if some protocols don't appear
         for missing in ["vless", "vmess", "shadowsocks", "trojan", "unknown"]:
             path = os.path.join(OUTPUT_DIR, f"{missing}.txt")
             if not os.path.exists(path):
                 save_to_file(path, [])
 
         # 5) --------- COUNTRY OUTPUTS ----------
-        # For each country in nodes list, compute per-link latency using only nodes of that country.
-        for country, nodes in country_nodes.items():
+        # Use per-host node->cc maps from the corresponding check-ping request for precise matching.
+        for country, _nodes in country_nodes.items():
             logging.info(f"Processing country: {country}")
             link_country_lat: dict[str, float] = {}
             for link, host in all_pairs:
-                # Build per-country latency map from actual results, using node->cc mapping (robust to key mismatches)
-                per_cc = latencies_by_cc_from_results(results_by_host.get(host, {}), node_country)
+                per_cc = latencies_by_cc_from_results(
+                    results_by_host.get(host, {}),
+                    node_cc_by_host.get(host, {}),
+                )
                 lat = per_cc.get(country, float("inf"))
-                # Optional safety fallback: if country-specific latency missing, use global
-                #if lat == float("inf"):
-                #    lat = host_global_lat.get(host, float("inf"))
+                if lat == float("inf"):
+                    lat = host_global_lat.get(host, float("inf"))
                 prev = link_country_lat.get(link, float("inf"))
                 if lat < prev:
                     link_country_lat[link] = lat
@@ -683,17 +698,13 @@ async def main_async():
                 logging.warning(f"No lines to save: {os.path.join(dest_dir, 'all.txt')}")
                 continue
 
-            # Per-protocol grouping for country
             grouped = group_by_protocol(sorted_links)
-
-            # Per-protocol outputs
             for proto, proto_links in grouped.items():
                 save_to_file(
                     os.path.join(dest_dir, f"{proto}.txt"),
                     [rename_line(l) for l in proto_links]
                 )
 
-            # Aggregated outputs
             renamed_all_country = [rename_line(l) for l in sorted_links]
             save_to_file(os.path.join(dest_dir, "all.txt"), renamed_all_country)
             save_to_file(os.path.join(dest_dir, "light.txt"), renamed_all_country[:30])
