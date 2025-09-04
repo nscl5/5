@@ -254,9 +254,9 @@ def extract_host(link: str, proto: str) -> str:
 
 # ============================== Async Ping =================================
 
-_connection_limit = asyncio.Semaphore(5)
+_connection_limit = asyncio.Semaphore(10)
 
-async def run_ping_once(client: httpx.AsyncClient, host: str, timeout: int = 10, retries: int = 3) -> dict:
+async def run_ping_once(client: httpx.AsyncClient, host: str, timeout: int = 45, retries: int = 3) -> dict:
     """
     Ping a host via check-host.net with retries.
     'host' must be a plain host/IP (no userinfo, no port).
@@ -286,8 +286,8 @@ async def run_ping_once(client: httpx.AsyncClient, host: str, timeout: int = 10,
                 if not req_id:
                     return {}
 
-                for _ in range(10):
-                    await asyncio.sleep(2)
+                for _ in range(45):
+                    await asyncio.sleep(3)
                     r2 = await client.get(
                         f"{base}/check-result/{req_id}",
                         headers={"Accept": "application/json"},
@@ -343,7 +343,7 @@ async def get_nodes_by_country(client: httpx.AsyncClient) -> dict[str, list[str]
     """
     url = "https://check-host.net/nodes/hosts"
     try:
-        r = await client.get(url, timeout=10)
+        r = await client.get(url, timeout=20)
         r.raise_for_status()
         data = r.json()
     except Exception as e:
