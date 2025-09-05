@@ -14,62 +14,66 @@ import ipaddress
 from urllib.parse import quote, urlsplit, urlunsplit, unquote
 from datetime import datetime
 from functools import lru_cache
+from collections import defaultdict
 
 # ============================== Configuration ==============================
 
 URLS = [
-    "https://www.v2nodes.com/subscriptions/country/al/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/ar/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/au/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/at/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/bh/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/be/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/bo/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/br/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/bg/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/ca/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/cn/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/co/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/cy/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/cz/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/dk/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/ee/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/fi/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/fr/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/de/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/gt/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/hk/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/hu/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/is/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/in/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/id/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/il/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/it/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/jp/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/kz/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/lv/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/my/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/md/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/no/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/pe/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/pl/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/pt/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/pr/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/ro/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/ru/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/sg/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/kr/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/es/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/se/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/ch/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/tw/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/th/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/nl/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/tr/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/ua/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/gb/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/us/?key=769B61EA877690D",
-    "https://www.v2nodes.com/subscriptions/country/vn/?key=769B61EA877690D",
+    "https://raw.githubusercontent.com/MhdiTaheri/V2rayCollector_Py/refs/heads/main/sub/Mix/mix.txt",
+    "https://raw.githubusercontent.com/MrAbolfazlNorouzi/iran-configs/refs/heads/main/configs/working-configs.txt",
+    "https://raw.githubusercontent.com/arshiacomplus/v2rayExtractor/refs/heads/main/mix/sub.html",
+    "https://www.v2nodes.com/subscriptions/country/al/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/ar/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/au/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/at/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/bh/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/be/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/bo/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/br/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/bg/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/ca/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/cn/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/co/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/cy/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/cz/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/dk/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/ee/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/fi/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/fr/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/de/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/gt/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/hk/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/hu/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/is/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/in/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/id/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/il/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/it/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/jp/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/kz/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/lv/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/my/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/md/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/no/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/pe/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/pl/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/pt/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/pr/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/ro/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/ru/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/sg/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/kr/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/es/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/se/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/ch/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/tw/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/th/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/nl/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/tr/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/ua/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/gb/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/us/?key=959A626A41E5D65",
+    "https://www.v2nodes.com/subscriptions/country/vn/?key=959A626A41E5D65",
 ]
 
 OUTPUT_DIR = "configs"
@@ -227,7 +231,7 @@ def extract_host(link: str, proto: str) -> str:
                 return hostport
             try:
                 decoded = b64_decode(body)
-                if "@" in decoded:
+                if "@" in decoded and ":" in decoded.split("@", 1)[0]:
                     _creds, hostport = decoded.split("@", 1)
                     return hostport
             except Exception:
@@ -254,13 +258,35 @@ def extract_host(link: str, proto: str) -> str:
 
 # ============================== Async Ping =================================
 
-_connection_limit = asyncio.Semaphore(5)
+_connection_limit = asyncio.Semaphore(10)
 
-async def run_ping_once(client: httpx.AsyncClient, host: str, timeout: int = 10, retries: int = 3) -> dict:
+def _has_ok(data: dict) -> bool:
+    """True if any node entry contains at least one OK measurement.
+    Accept both shapes: entries[0] = [[status, time, *opt], ...] or list of dicts.
+    """
+    if not isinstance(data, dict):
+        return False
+    for entries in data.values():
+        try:
+            if not entries:
+                continue
+            first = entries[0]
+            if isinstance(first, (list, tuple)):
+                for row in first:
+                    if isinstance(row, (list, tuple)) and row and row[0] == "OK":
+                        return True
+            for row in entries:
+                if isinstance(row, dict) and row.get("status") == "OK":
+                    return True
+        except Exception:
+            continue
+    return False
+
+async def run_ping_once(client: httpx.AsyncClient, host: str, timeout: int = 45, retries: int = 3) -> dict:
     """
     Ping a host via check-host.net with retries.
-    'host' must be a plain host/IP (no userinfo, no port).
-    Returns the raw JSON map of node -> results.
+    Returns a dict: {"results": <node->entries map>, "node_cc": <node->cc map>}
+    Host must be plain (no userinfo/port).
     """
     if not host:
         return {}
@@ -275,26 +301,64 @@ async def run_ping_once(client: httpx.AsyncClient, host: str, timeout: int = 10,
                     headers={"Accept": "application/json"},
                     timeout=timeout,
                 )
-                if r1.status_code == 503:
+                if r1.status_code in (429, 503):
                     wait = random.uniform(2, 5)
-                    logging.warning(f"503 for {host}, retry {attempt}/{retries} after {wait:.1f}s")
+                    logging.warning(f"{r1.status_code} for {host}, retry {attempt}/{retries} after {wait:.1f}s")
                     await asyncio.sleep(wait)
                     continue
 
                 r1.raise_for_status()
-                req_id = r1.json().get("request_id")
+                j1 = r1.json()
+                req_id = j1.get("request_id")
                 if not req_id:
                     return {}
 
-                for _ in range(10):
-                    await asyncio.sleep(2)
-                    r2 = await client.get(
-                        f"{base}/check-result/{req_id}",
-                        headers={"Accept": "application/json"},
-                        timeout=timeout,
-                    )
-                    if r2.status_code == 200 and r2.json():
-                        return r2.json()
+                # Build node->cc map from this specific check-ping response
+                nodes_map: dict[str, str] = {}
+                nodes_json = j1.get("nodes", {}) or {}
+                for node, arr in nodes_json.items():
+                    cc = None
+                    try:
+                        if isinstance(arr, (list, tuple)) and arr:
+                            cc = str(arr[0]).lower()
+                    except Exception:
+                        pass
+                    base_node = node.split("/", 1)[0].split(":", 1)[0].lower()
+                    if cc:
+                        nodes_map[base_node] = cc
+
+                # initial wait
+                await asyncio.sleep(4)
+
+                max_polls = 45  # ~135s with sleep=3
+                got_partial_any = False
+                last_data = {}
+                for _ in range(max_polls):
+                    await asyncio.sleep(3)
+                    try:
+                        r2 = await client.get(
+                            f"{base}/check-result/{req_id}",
+                            headers={"Accept": "application/json"},
+                            timeout=timeout,
+                        )
+                        if r2.status_code in (429, 503):
+                            await asyncio.sleep(3 + random.random() * 2)
+                            continue
+                        r2.raise_for_status()
+                        data = r2.json() or {}
+                        if data:
+                            got_partial_any = True
+                            last_data = data
+                            if _has_ok(data):
+                                return {"results": data, "node_cc": nodes_map}
+                    except httpx.ReadTimeout:
+                        continue
+                    except Exception as e:
+                        logging.debug(f"check-result error for {host}: {e}")
+                        continue
+
+                if got_partial_any:
+                    return {"results": last_data, "node_cc": nodes_map}
                 break
 
             except Exception as e:
@@ -303,47 +367,49 @@ async def run_ping_once(client: httpx.AsyncClient, host: str, timeout: int = 10,
 
     return {}
 
-def extract_latency_by_country(results: dict, country_nodes: dict[str, list[str]]) -> dict[str, float]:
-    """
-    Compute average latency per country based on check-host node results.
-    results: map[node] = list or nested arrays per API.
-    """
-    latencies: dict[str, float] = {}
-    for country, nodes in country_nodes.items():
-        pings: list[float] = []
-        for node in nodes:
-            entries = results.get(node, [])
-            try:
-                for status, ping in entries[0]:
-                    if status == "OK":
-                        pings.append(ping)
-            except Exception:
-                continue
-        latencies[country] = (sum(pings) / len(pings)) if pings else float("inf")
-    return latencies
+# --- entries parsing that tolerates alternate shapes ---
 
-def extract_latency_global(results: dict) -> float:
-    """
-    Compute global average latency across *all* nodes for a single host.
-    If no OK pings exist, return +inf.
-    """
-    pings: list[float] = []
-    for node, entries in (results or {}).items():
-        try:
-            for status, ping in entries[0]:
-                if status == "OK":
-                    pings.append(ping)
-        except Exception:
-            continue
-    return (sum(pings) / len(pings)) if pings else float("inf")
+def _iter_ok_pings(entries):
+    """Yield ping times (seconds) for OK rows across both API shapes."""
+    if entries is None:
+        return
+    # classic/list shape under entries[0]
+    try:
+        seq = entries[0]
+        if isinstance(seq, (list, tuple)):
+            for row in seq:
+                if isinstance(row, (list, tuple)) and row and row[0] == "OK":
+                    if len(row) >= 2:
+                        try:
+                            yield float(row[1])
+                        except Exception:
+                            continue
+        return
+    except Exception:
+        pass
+    # list-of-dicts fallback
+    try:
+        for row in entries:
+            if isinstance(row, dict) and row.get("status") == "OK":
+                t = row.get("time")
+                if t is not None:
+                    try:
+                        yield float(t)
+                    except Exception:
+                        continue
+    except Exception:
+        return
+
+# ============================== Node Maps / Latency ========================
 
 async def get_nodes_by_country(client: httpx.AsyncClient) -> dict[str, list[str]]:
     """
     Fetch check-host nodes and group them by country code.
+    (Used to decide which country folders to emit; per-host mapping comes from check-ping.)
     """
     url = "https://check-host.net/nodes/hosts"
     try:
-        r = await client.get(url, timeout=10)
+        r = await client.get(url, headers={"Accept": "application/json"}, timeout=20)
         r.raise_for_status()
         data = r.json()
     except Exception as e:
@@ -357,12 +423,40 @@ async def get_nodes_by_country(client: httpx.AsyncClient) -> dict[str, list[str]
             mapping.setdefault(str(loc[0]).lower(), []).append(node)
     return mapping
 
+def _derive_cc_from_node(node: str) -> str:
+    node = node.split("/", 1)[0].split(":", 1)[0].lower()
+    first = node.split(".", 1)[0]
+    m = re.match(r"^([a-z]{2})", first)
+    return m.group(1) if m else ""
+
+def latencies_by_cc_from_results(results: dict, node_to_cc: dict[str, str]) -> dict[str, float]:
+    """Average latency per country-code from a single host's results.
+    Prefer explicit node_to_cc mapping from the same request; fall back to deriving from node id.
+    """
+    pings_by_cc: dict[str, list[float]] = defaultdict(list)
+    for node, entries in (results or {}).items():
+        base_node = node.split("/", 1)[0].split(":", 1)[0]
+        cc = node_to_cc.get(base_node)
+        if not cc:
+            cc = _derive_cc_from_node(base_node)
+        if not cc:
+            continue
+        for ping in _iter_ok_pings(entries):
+            pings_by_cc[cc].append(ping)
+    return {cc: (sum(v)/len(v)) if v else float("inf") for cc, v in pings_by_cc.items()}
+
+def extract_latency_global(results: dict) -> float:
+    """Compute global average latency across all nodes for a single host."""
+    pings: list[float] = []
+    for node, entries in (results or {}).items():
+        for ping in _iter_ok_pings(entries):
+            pings.append(ping)
+    return (sum(pings) / len(pings)) if pings else float("inf")
+
 # ============================== Output =====================================
 
 def save_to_file(path: str, lines: list[str]):
-    """
-    Save a list of configuration lines to a file, creating directories if needed.
-    """
+    """Save a list of configuration lines to a file."""
     if not lines:
         logging.warning(f"No lines to save: {path}")
         return
@@ -374,9 +468,6 @@ def save_to_file(path: str, lines: list[str]):
 # ============================== Renaming ===================================
 
 def _build_tag(ip: str) -> str:
-    """
-    Build a uniform display name: <flag> ShatakVPN <random>.
-    """
     country = get_country_by_ip(ip)
     flag = country_flag(country)
     return f"{flag} ShatakVPN {random.randint(100000, 999999)}"
@@ -385,9 +476,6 @@ def is_valid_hostname(label: str) -> bool:
     return re.fullmatch(r"[A-Za-z0-9.-]+", label or "") is not None
 
 def _resolve_host(host: str) -> str:
-    """
-    Resolve a hostname to IPv4; if input is already an IP (v4/v6) or invalid hostname, return as-is.
-    """
     host = host.strip()
     if not host:
         return host
@@ -403,7 +491,6 @@ def _resolve_host(host: str) -> str:
         return host
 
 def rename_vmess(link: str, ip: str, port: str, tag: str) -> str:
-    """Update vmess JSON (add/port/ps) and keep a fragment for clients that display it."""
     try:
         raw = link.split("://", 1)[1]
         cfg = json.loads(b64_decode(raw))
@@ -415,16 +502,10 @@ def rename_vmess(link: str, ip: str, port: str, tag: str) -> str:
         return link
 
 def rename_shadowsocks(link: str, ip: str, port: str, tag: str) -> str:
-    """
-    Support both SS forms:
-    - ss://base64(method:password)@host:port#name
-    - ss://base64(method:password@host:port)#name
-    """
     try:
         body = link.split("ss://", 1)[1]
         if "#" in body:
             body = body.split("#", 1)[0]
-
         method = pwd = None
         if "@" in body:
             creds_part, _hostport = body.split("@", 1)
@@ -442,10 +523,8 @@ def rename_shadowsocks(link: str, ip: str, port: str, tag: str) -> str:
                     method, pwd = decoded.split(":", 1)
             except Exception:
                 pass
-
         if not (method and pwd):
             return link
-
         new_creds = b64_encode(f"{method}:{pwd}")
         hp = format_hostport(ip, port or "443")
         return f"ss://{new_creds}@{hp}#{quote(tag)}"
@@ -454,12 +533,10 @@ def rename_shadowsocks(link: str, ip: str, port: str, tag: str) -> str:
         return link
 
 def rename_ssr(link: str, ip: str, port: str, tag: str) -> str:
-    """Rewrite SSR main section host:port; if IPv6, keep original (SSR format is IPv4-centric)."""
     try:
         if ":" in ip and not ip.startswith("["):
             logging.debug("SSR IPv6 host detected; skipping rename to avoid ambiguity.")
             return link
-
         raw = link.split("ssr://", 1)[1]
         decoded = b64url_decode(raw).decode(errors="ignore")
         parts = decoded.split("/?", 1)
@@ -479,13 +556,6 @@ def rename_ssr(link: str, ip: str, port: str, tag: str) -> str:
         return link
 
 def rename_url_like(link: str, ip: str, port: str, tag: str) -> str:
-    """
-    Generic URL-style replacer:
-    - Preserve userinfo if present
-    - Replace host:port (with IPv6 brackets when needed)
-    - Preserve path/query
-    - Replace fragment with encoded tag
-    """
     try:
         p = urlsplit(link)
         hostport = p.netloc
@@ -512,7 +582,6 @@ def _rename_cached(link: str, ip: str, port: str, tag: str, proto: str) -> str:
     return rename_url_like(link, ip, port, tag)
 
 def rename_line(link: str) -> str:
-    """Route to protocol-specific renamers; default to URL-like behavior."""
     proto = detect_protocol(link)
     host_port = extract_host(link, proto)
     if not host_port:
@@ -537,7 +606,7 @@ async def main_async():
     logging.info(f"[{now}] Starting download and processing…")
 
     async with httpx.AsyncClient() as client:
-        # 1) Discover nodes per country (used for country sorting)
+        # 1) Discover nodes per country (used to decide which country folders to emit)
         country_nodes = await get_nodes_by_country(client)
 
         # 2) Fetch all raw configs and collect (link, host) pairs
@@ -546,7 +615,6 @@ async def main_async():
             blob = maybe_base64_decode(fetch_data(url))
             configs = re.findall(r"[a-zA-Z][\w+.-]*://[^\s]+", blob)
             logging.info(f"Fetched {url} → {len(configs)} configs")
-
             for link in configs:
                 proto = detect_protocol(link)
                 hostport = extract_host(link, proto)
@@ -565,28 +633,34 @@ async def main_async():
         hosts = sorted({h for _, h in all_pairs if h})
         tasks = [run_ping_once(client, h) for h in hosts]
         ping_results = await asyncio.gather(*tasks)
-        results_by_host = dict(zip(hosts, ping_results))
+
+        results_by_host: dict[str, dict] = {}
+        node_cc_by_host: dict[str, dict] = {}
+        for h, item in zip(hosts, ping_results):
+            if isinstance(item, dict) and ("results" in item or "node_cc" in item):
+                results_by_host[h] = item.get("results") or {}
+                node_cc_by_host[h] = item.get("node_cc") or {}
+            else:
+                # backward compatibility: treat entire item as results
+                results_by_host[h] = item or {}
+                node_cc_by_host[h] = {}
 
         # Helper: map host -> global avg latency
         host_global_lat: dict[str, float] = {
             h: extract_latency_global(results_by_host.get(h, {})) for h in hosts
         }
 
-        # 4) --------- GLOBAL OUTPUTS (root of OUTPUT_DIR) ----------
-        # Compute per-link latency based on *global* average across all nodes
+        # 4) --------- GLOBAL OUTPUTS ----------
         link_global_lat: dict[str, float] = {}
         for link, host in all_pairs:
             lat = host_global_lat.get(host, float("inf"))
             link_global_lat[link] = min(link_global_lat.get(link, float("inf")), lat)
 
-        # Rank globally
         sorted_global_links = [l for l, _ in sorted(link_global_lat.items(), key=lambda x: x[1])]
         renamed_global = [rename_line(l) for l in sorted_global_links]
 
-        # Global per-protocol splits
         grouped_global = group_by_protocol(sorted_global_links)
 
-        # Write root files (global)
         save_to_file(os.path.join(OUTPUT_DIR, "all.txt"), renamed_global)
         save_to_file(os.path.join(OUTPUT_DIR, "light.txt"), renamed_global[:30])
 
@@ -596,43 +670,44 @@ async def main_async():
                 [rename_line(l) for l in proto_links]
             )
 
-        # Ensure a consistent set even if some protocols don't appear
         for missing in ["vless", "vmess", "shadowsocks", "trojan", "unknown"]:
             path = os.path.join(OUTPUT_DIR, f"{missing}.txt")
             if not os.path.exists(path):
                 save_to_file(path, [])
 
-        # 5) --------- COUNTRY OUTPUTS (same behavior as before) ----------
-        # Note: original code placed every link into every country group; we keep it
-        #       so sorting differs per country based on per-country latencies.
-        # Build a quick index: for each host, we already have full results.
-        for country, nodes in country_nodes.items():
+        # 5) --------- COUNTRY OUTPUTS ----------
+        # Use per-host node->cc maps from the corresponding check-ping request for precise matching.
+        for country, _nodes in country_nodes.items():
             logging.info(f"Processing country: {country}")
-            # For each link, compute latency using only nodes in this country
             link_country_lat: dict[str, float] = {}
             for link, host in all_pairs:
-                per_country = extract_latency_by_country(results_by_host.get(host, {}), {country: nodes})
-                lat = per_country.get(country, float("inf"))
+                per_cc = latencies_by_cc_from_results(
+                    results_by_host.get(host, {}),
+                    node_cc_by_host.get(host, {}),
+                )
+                lat = per_cc.get(country, float("inf"))
+                if lat == float("inf"):
+                    lat = host_global_lat.get(host, float("inf"))
                 prev = link_country_lat.get(link, float("inf"))
                 if lat < prev:
                     link_country_lat[link] = lat
 
-            sorted_links = [l for l, _ in sorted(link_country_lat.items(), key=lambda x: x[1])]
-
-            # Per-protocol grouping for country
-            grouped = group_by_protocol(sorted_links)
+            sorted_links = [l for l, _ in sorted(link_country_lat.items(), key=lambda x: x[1]) if link_country_lat[l] != float("inf")]
 
             dest_dir = os.path.join(OUTPUT_DIR, country)
             os.makedirs(dest_dir, exist_ok=True)
 
-            # Per-protocol outputs
+            if not sorted_links:
+                logging.warning(f"No lines to save: {os.path.join(dest_dir, 'all.txt')}")
+                continue
+
+            grouped = group_by_protocol(sorted_links)
             for proto, proto_links in grouped.items():
                 save_to_file(
                     os.path.join(dest_dir, f"{proto}.txt"),
                     [rename_line(l) for l in proto_links]
                 )
 
-            # Aggregated outputs
             renamed_all_country = [rename_line(l) for l in sorted_links]
             save_to_file(os.path.join(dest_dir, "all.txt"), renamed_all_country)
             save_to_file(os.path.join(dest_dir, "light.txt"), renamed_all_country[:30])
