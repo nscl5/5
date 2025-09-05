@@ -21,7 +21,6 @@ from collections import defaultdict
 URLS = [
     "https://raw.githubusercontent.com/MrAbolfazlNorouzi/iran-configs/refs/heads/main/configs/working-configs.txt",
     "https://raw.githubusercontent.com/arshiacomplus/v2rayExtractor/refs/heads/main/mix/sub.html",
-    "https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/refs/heads/main/source/local-config.txt",
     "https://www.v2nodes.com/subscriptions/country/all/?key=CCAD69583DBA2BF",
 ]
 
