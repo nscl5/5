@@ -1,0 +1,1 @@
+vless://32299d03-aa36-4804-a2d5-b9d4fc0c6ed8@57.129.82.155:54581?type=grpc&serviceName=&authority=&security=reality&pbk=rr3DwNZISaLzH14gXE23sT8eyqt-XV-rWEKOtOUaXg4&fp=chrome&sni=khamenei.ir.com&sid=6dd987f84b69b5f3&spx=%2F#ShatakVPN%20-%20Cloned-x0vd8gg0
