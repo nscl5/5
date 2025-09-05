@@ -1,3 +1,2 @@
-vless://32299d03-aa36-4804-a2d5-b9d4fc0c6ed8@57.129.82.155:54581?type=grpc&serviceName=&authority=&security=reality&pbk=rr3DwNZISaLzH14gXE23sT8eyqt-XV-rWEKOtOUaXg4&fp=chrome&sni=khamenei.ir.com&sid=6dd987f84b69b5f3&spx=%2F#ShatakVPN%20-%20Cloned-x0vd8gg0
 vless://f90f6272-e96f-47e6-b242-5ef3a7e6c1e2@51.89.225.118:46381?type=grpc&serviceName=&authority=&security=reality&pbk=rr3DwNZISaLzH14gXE23sT8eyqt-XV-rWEKOtOUaXg4&fp=chrome&sni=khamenei.ir.com&sid=6dd987f84b69b5f3&spx=%2F#ShatakVPN-User%201
 vless://f90f6272-e96f-47e6-b242-5ef3a7e6c1e2@148.113.143.124:46381?type=grpc&serviceName=&authority=&security=reality&pbk=rr3DwNZISaLzH14gXE23sT8eyqt-XV-rWEKOtOUaXg4&fp=chrome&sni=khamenei.ir.com&sid=6dd987f84b69b5f3&spx=%2F#ShatakVPN-User%201
