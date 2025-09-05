@@ -22,6 +22,7 @@ URLS = [
     "https://raw.githubusercontent.com/MhdiTaheri/V2rayCollector_Py/refs/heads/main/sub/Mix/mix.txt",
     "https://raw.githubusercontent.com/MrAbolfazlNorouzi/iran-configs/refs/heads/main/configs/working-configs.txt",
     "https://raw.githubusercontent.com/arshiacomplus/v2rayExtractor/refs/heads/main/mix/sub.html",
+    "https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/refs/heads/main/source/local-config.txt",
     "https://www.v2nodes.com/subscriptions/country/al/?key=959A626A41E5D65",
     "https://www.v2nodes.com/subscriptions/country/ar/?key=959A626A41E5D65",
     "https://www.v2nodes.com/subscriptions/country/au/?key=959A626A41E5D65",
