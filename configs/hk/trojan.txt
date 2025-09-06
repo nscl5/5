@@ -1,4 +1,3 @@
-trojan://253bc477d4e43c209f2d427272968280@13.230.50.46:1924?allowInsecure=1&sni=23.45.86.28#%F0%9F%87%AF%F0%9F%87%B5%20ShatakVPN%20348217
-trojan://253bc477d4e43c209f2d427272968280@13.230.50.46:4317?allowInsecure=1&sni=23.45.86.28#%F0%9F%87%AF%F0%9F%87%B5%20ShatakVPN%20582818
-trojan://253bc477d4e43c209f2d427272968280@13.230.50.46:4801?allowInsecure=1&sni=23.45.86.28#%F0%9F%87%AF%F0%9F%87%B5%20ShatakVPN%20456249
-trojan://1ce1df7962f71c6f@51.195.255.103:8443?security=tls&headerType=none&type=tcp&sni=uk-03.allhubb.info#%F0%9F%87%AC%F0%9F%87%A7%20ShatakVPN%20315632
+trojan://253bc477d4e43c209f2d427272968280@18.162.156.99:441?allowInsecure=1&sni=23.45.86.28#%F0%9F%87%AD%F0%9F%87%B0%20ShatakVPN%20170658
+trojan://253bc477d4e43c209f2d427272968280@3.112.149.60:13345?allowInsecure=1&sni=23.45.86.28#%F0%9F%87%AF%F0%9F%87%B5%20ShatakVPN%20227607
+trojan://1ce1df7962f71c6f@51.195.255.103:8443?security=tls&headerType=none&type=tcp&sni=uk-03.allhubb.info#%F0%9F%87%AC%F0%9F%87%A7%20ShatakVPN%20123113
