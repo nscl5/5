@@ -22,6 +22,7 @@ URLS = [
     "https://raw.githubusercontent.com/MrAbolfazlNorouzi/iran-configs/refs/heads/main/configs/working-configs.txt",
     "https://raw.githubusercontent.com/arshiacomplus/v2rayExtractor/refs/heads/main/mix/sub.html",
     "https://www.v2nodes.com/subscriptions/country/all/?key=CCAD69583DBA2BF",
+    "https://raw.githubusercontent.com/4n0nymou3/multi-proxy-config-fetcher/refs/heads/main/configs/proxy_configs.txt",
 ]
 
 OUTPUT_DIR = "configs"
