@@ -1,5 +1,5 @@
-hysteria2://channel_dailyconfigs%3AydiCRB4ch1MJWYvIErVQIhsC6itILilU@176.124.204.248:443?security=tls&obfs=salamander&obfs-password=5zcstyddEr2HrwDFUGsF87IdN4eokPcN&insecure=1&pinSHA256=43%3A71%3A51%3AED%3A9A%3A02%3A15%3A79%3ABF%3A1E%3AFF%3ABE%3ABB%3A73%3AAC%3A7B%3A21%3A0C%3A5D%3A4A%3AD1%3AE4%3A3E%3A2F%3A67%3AE9%3A5B%3A49%3A54%3AC3%3A5B%3A2E&sni=ubuntu%20com#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20952529
-hysteria2://79c4fe11-9787-406b-bf94-c1c1dbf59e28@77.223.214.193:31468?security=tls&insecure=1&sni=www.bing.com#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20925175
-hysteria2://miaoge110@45.58.38.153:12687?security=tls&insecure=1&sni=www.bing.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20800988
-hy2://dongtaiwang.com@208.87.243.187:22222/?insecure=1&sni=www.bing.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20233769
-hysteria2://decc260a-d183-465a-9795-74717ef60bbd@74.82.63.103:11066?security=tls&insecure=0&mport=11001-11099#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20707752
+hysteria2://channel_dailyconfigs%3AydiCRB4ch1MJWYvIErVQIhsC6itILilU@176.124.204.248:443?security=tls&obfs=salamander&obfs-password=5zcstyddEr2HrwDFUGsF87IdN4eokPcN&insecure=1&pinSHA256=43%3A71%3A51%3AED%3A9A%3A02%3A15%3A79%3ABF%3A1E%3AFF%3ABE%3ABB%3A73%3AAC%3A7B%3A21%3A0C%3A5D%3A4A%3AD1%3AE4%3A3E%3A2F%3A67%3AE9%3A5B%3A49%3A54%3AC3%3A5B%3A2E&sni=ubuntu%20com#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20464369
+hysteria2://79c4fe11-9787-406b-bf94-c1c1dbf59e28@77.223.214.193:31468?security=tls&insecure=1&sni=www.bing.com#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20761250
+hysteria2://miaoge110@45.58.38.153:12687?security=tls&insecure=1&sni=www.bing.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20337016
+hy2://dongtaiwang.com@208.87.243.187:22222/?insecure=1&sni=www.bing.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20110370
+hysteria2://decc260a-d183-465a-9795-74717ef60bbd@74.82.63.103:11066?security=tls&insecure=0&mport=11001-11099#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20224860
