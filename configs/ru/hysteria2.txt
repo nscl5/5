@@ -1,9 +1,6 @@
-hysteria2://joindailyconfigs%3ARBJamRsWyUsuAW9Nc6l3dXLFPvlv1g2P@95.181.174.31:443?sni=slack.com&obfs=salamander&obfs-password=tqfg2P0b7p8fcjCbcRqj4lHleH5jcvBs&insecure=1#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20981654
-hysteria2://1sbtkLK7F3@195.22.157.104:19561?fastopen=1&obfs=salamander&obfs-password=fxdc345t4gcvj459tgc&sni=joon.arshiacomplus.dpdns.org#%F0%9F%87%AC%F0%9F%87%A7%20ShatakVPN%20844870
-hysteria2://1sbtkLK7F3@195.22.157.104:39279/?sni=joon.arshiacomplus.dpdns.org&obfs=salamander&obfs-password=yukugikguitlbgl#%F0%9F%87%AC%F0%9F%87%A7%20ShatakVPN%20319616
-hysteria2://1sbtkLK7F3@195.22.157.104:43672?fastopen=1&sni=joon.arshiacomplus.dpdns.org#%F0%9F%87%AC%F0%9F%87%A7%20ShatakVPN%20537795
-hy2://79c4fe11-9787-406b-bf94-c1c1dbf59e28@77.223.214.193:31468/?insecure=1&sni=www.bing.com#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20745177
-hysteria2://79c4fe11-9787-406b-bf94-c1c1dbf59e28@77.223.214.193:31468?security=tls&insecure=1&sni=www.bing.com#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20861320
-hy2://dongtaiwang.com@208.87.243.187:22222/?insecure=1&sni=www.bing.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20313887
-hysteria2://dongtaiwang.com@208.87.243.187:22222?peer=www.bing.com&insecure=1&obfs=none#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20229545
-hysteria2://decc260a-d183-465a-9795-74717ef60bbd@74.82.63.103:11066?security=tls&insecure=0&mport=11001-11099#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20764863
+hysteria2://kanale_dailyconfigs%3A48nBETs3vTt0SjdCmPGlSJDO98KRONJR@95.181.174.31:443?security=tls&obfs=salamander&obfs-password=tqfg2P0b7p8fcjCbcRqj4lHleH5jcvBs&insecure=1&pinSHA256=EC%3A41%3A2A%3AC8%3ADC%3A21%3A90%3A84%3AD2%3AFA%3A57%3AE2%3AE3%3A78%3A2F%3A3F%3AE2%3A88%3A4F%3AF1%3ADE%3A14%3ABE%3A91%3A5D%3A14%3A9F%3AA4%3AFC%3AB2%3A45%3AD2&sni=slack.com#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20982663
+hysteria2://1sbtkLK7F3@195.22.157.104:19561?fastopen=1&obfs=salamander&obfs-password=fxdc345t4gcvj459tgc&sni=joon.arshiacomplus.dpdns.org#%F0%9F%87%AC%F0%9F%87%A7%20ShatakVPN%20824290
+hysteria2://1sbtkLK7F3@195.22.157.104:39279/?sni=joon.arshiacomplus.dpdns.org&obfs=salamander&obfs-password=yukugikguitlbgl#%F0%9F%87%AC%F0%9F%87%A7%20ShatakVPN%20912105
+hy2://79c4fe11-9787-406b-bf94-c1c1dbf59e28@77.223.214.193:31468/?insecure=1&sni=www.bing.com#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20512147
+hy2://dongtaiwang.com@208.87.243.187:22222/?insecure=1&sni=www.bing.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20425127
+hysteria2://dongtaiwang.com@208.87.243.187:22222?peer=www.bing.com&insecure=1&obfs=none#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20454157
