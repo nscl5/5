@@ -1,6 +1,6 @@
-hysteria2://kanale_dailyconfigs%3A48nBETs3vTt0SjdCmPGlSJDO98KRONJR@95.181.174.31:443?security=tls&obfs=salamander&obfs-password=tqfg2P0b7p8fcjCbcRqj4lHleH5jcvBs&insecure=1&pinSHA256=EC%3A41%3A2A%3AC8%3ADC%3A21%3A90%3A84%3AD2%3AFA%3A57%3AE2%3AE3%3A78%3A2F%3A3F%3AE2%3A88%3A4F%3AF1%3ADE%3A14%3ABE%3A91%3A5D%3A14%3A9F%3AA4%3AFC%3AB2%3A45%3AD2&sni=slack.com#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20309827
-hysteria2://1sbtkLK7F3@195.22.157.104:19561?fastopen=1&obfs=salamander&obfs-password=fxdc345t4gcvj459tgc&sni=joon.arshiacomplus.dpdns.org#%F0%9F%87%AC%F0%9F%87%A7%20ShatakVPN%20921290
-hysteria2://1sbtkLK7F3@195.22.157.104:39279/?sni=joon.arshiacomplus.dpdns.org&obfs=salamander&obfs-password=yukugikguitlbgl#%F0%9F%87%AC%F0%9F%87%A7%20ShatakVPN%20447953
-hy2://79c4fe11-9787-406b-bf94-c1c1dbf59e28@77.223.214.193:31468/?insecure=1&sni=www.bing.com#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20947977
-hy2://dongtaiwang.com@208.87.243.187:22222/?insecure=1&sni=www.bing.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20423759
-hysteria2://dongtaiwang.com@208.87.243.187:22222?peer=www.bing.com&insecure=1&obfs=none#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20320559
+hysteria2://kanale_dailyconfigs%3A48nBETs3vTt0SjdCmPGlSJDO98KRONJR@95.181.174.31:443?security=tls&obfs=salamander&obfs-password=tqfg2P0b7p8fcjCbcRqj4lHleH5jcvBs&insecure=1&pinSHA256=EC%3A41%3A2A%3AC8%3ADC%3A21%3A90%3A84%3AD2%3AFA%3A57%3AE2%3AE3%3A78%3A2F%3A3F%3AE2%3A88%3A4F%3AF1%3ADE%3A14%3ABE%3A91%3A5D%3A14%3A9F%3AA4%3AFC%3AB2%3A45%3AD2&sni=slack.com#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20770371
+hysteria2://1sbtkLK7F3@195.22.157.104:19561?fastopen=1&obfs=salamander&obfs-password=fxdc345t4gcvj459tgc&sni=joon.arshiacomplus.dpdns.org#%F0%9F%87%AC%F0%9F%87%A7%20ShatakVPN%20401433
+hysteria2://1sbtkLK7F3@195.22.157.104:39279/?sni=joon.arshiacomplus.dpdns.org&obfs=salamander&obfs-password=yukugikguitlbgl#%F0%9F%87%AC%F0%9F%87%A7%20ShatakVPN%20410062
+hy2://79c4fe11-9787-406b-bf94-c1c1dbf59e28@77.223.214.193:31468/?insecure=1&sni=www.bing.com#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20297642
+hy2://dongtaiwang.com@208.87.243.187:22222/?insecure=1&sni=www.bing.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20936880
+hysteria2://dongtaiwang.com@208.87.243.187:22222?peer=www.bing.com&insecure=1&obfs=none#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20692082
