@@ -1,2 +1,2 @@
-hy2://dongtaiwang.com@208.87.243.187:22222/?insecure=1&sni=www.bing.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20326739
-hysteria2://8d80603a-d7d7-4bcd-ad88-aaf1cf70b8c6@172.245.66.60:3000/?sni=00fd98-co.9966661.xyz#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20454198
+hy2://dongtaiwang.com@208.87.243.187:22222/?insecure=1&sni=www.bing.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20794782
+hysteria2://8d80603a-d7d7-4bcd-ad88-aaf1cf70b8c6@172.245.66.60:3000/?sni=00fd98-co.9966661.xyz#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20200895
