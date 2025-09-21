@@ -20,9 +20,23 @@ from collections import defaultdict
 
 URLS = [
     "https://raw.githubusercontent.com/MrAbolfazlNorouzi/iran-configs/refs/heads/main/configs/working-configs.txt",
-    "https://raw.githubusercontent.com/arshiacomplus/v2rayExtractor/refs/heads/main/mix/sub.html",
     "https://www.v2nodes.com/subscriptions/country/all/?key=CCAD69583DBA2BF",
     "https://raw.githubusercontent.com/4n0nymou3/multi-proxy-config-fetcher/refs/heads/main/configs/proxy_configs.txt",
+    "https://dev1.irdevs.sbs",
+    "htta://robin.victoriacross.workers.dev",
+    "https://raw.githubusercontent.com/DarknessShade/Sub/main/V2mix",
+    "https://raw.githubusercontent.com/DiDiten/HiN-VPN/main/subscription/normal/mix",
+    "https://raw.githubusercontent.com/Mahdi0024/ProxyCollector/master/sub/proxies.txt",
+    "https://raw.githubusercontent.com/Epodonios/v2ray-configs/refs/heads/main/Sub1.txt",
+    "https://raw.githubusercontent.com/Epodonios/v2ray-configs/refs/heads/main/Sub2.txt",
+    "https://raw.githubusercontent.com/Aristaproject/AristaSub/refs/heads/main/Arista4.txt",
+    "https://raw.githubusercontent.com/Aristaproject/AristaSub/refs/heads/main/Arista5.txt",
+    "https://raw.githubusercontent.com/Rayan-Config/C-Sub/refs/heads/main/configs/proxy.txt",
+    "https://raw.githubusercontent.com/roosterkid/openproxylist/refs/heads/main/V2RAY_RAW.txt",
+    "https://raw.githubusercontent.com/MahsaNetConfigTopic/config/refs/heads/main/xray_final.txt",
+    "https://raw.githubusercontent.com/arshiacomplus/v2rayExtractor/refs/heads/main/mix/sub.html",
+    "https://raw.githubusercontent.com/mahdibland/V2RayAggregator/refs/heads/master/Eternity.txt",
+    "https://raw.githubusercontent.com/kayhgng/v2raykayh/refs/heads/main/kayhgngcollectorv3v2ray_ss",
 ]
 
 OUTPUT_DIR = "configs"
@@ -419,7 +433,7 @@ def save_to_file(path: str, lines: list[str]):
 def _build_tag(ip: str) -> str:
     country = get_country_by_ip(ip)
     flag = country_flag(country)
-    return f"{flag} ShatakVPN {random.randint(100000, 999999)}"
+    return f"{flag} Freedom_to_Dream {random.randint(100000, 999999)}"
 
 def is_valid_hostname(label: str) -> bool:
     return re.fullmatch(r"[A-Za-z0-9.-]+", label or "") is not None
