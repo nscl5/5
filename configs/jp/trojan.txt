@@ -1,5 +1,6 @@
-trojan://02XtoczO7V@104.20.5.134:443?path=%2Fhishhhh123&security=tls&alpn=http%2F1.1&host=mooshali.arshiacomplus.dpdns.org&fp=firefox&type=ws&sni=mooshali.arshiacomplus.dpdns.org#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20478676
-trojan://o6x5BZAuSj@104.20.5.134:2053?path=%2Fhishhhh123&security=tls&alpn=http%2F1.1&host=mooshali.arshiacomplus.dpdns.org&fp=firefox&type=ws&sni=mooshali.arshiacomplus.dpdns.org#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20468564
-trojan://7778e684-f435-4166-bf9e-0256cb28bf10@15.197.162.184:443?type=tcp&security=tls&fp=chrome&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20857961
-trojan://96983eb4-c8f1-316e-ab00-500014ed3d8b@61.228.65.37:8443?type=tcp&security=tls&fp=chrome&sni=207.148.100.75&allowInsecure=1#%F0%9F%87%B9%F0%9F%87%BC%20ShatakVPN%20986290
-trojan://2ee85121-31de-4581-a492-eb00f606e392@51.81.203.233:443?security=tls&headerType=none&type=tcp&sni=rs4.freeguard.org#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20998997
+trojan://02XtoczO7V@104.20.6.134:443?path=%2Fhishhhh123&security=tls&alpn=http%2F1.1&host=mooshali.arshiacomplus.dpdns.org&fp=firefox&type=ws&sni=mooshali.arshiacomplus.dpdns.org#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20129898
+trojan://o6x5BZAuSj@104.20.6.134:2053?path=%2Fhishhhh123&security=tls&alpn=http%2F1.1&host=mooshali.arshiacomplus.dpdns.org&fp=firefox&type=ws&sni=mooshali.arshiacomplus.dpdns.org#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20409419
+trojan://7778e684-f435-4166-bf9e-0256cb28bf10@15.197.162.184:443?type=tcp&security=tls&fp=chrome&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20874243
+trojan://zL78LA0D5P@5.255.103.217:58194?mode=stream-one&path=/moshali33&security=tls&alpn=h3&host=moshali.arshiacomplus.dpdns.org&fp=firefox&type=xhttp&sni=moshali.arshiacomplus.dpdns.org.cer&allowInsecure=1#%F0%9F%87%B3%F0%9F%87%B1%20ShatakVPN%20537081
+trojan://6e1b9a65-884f-3aa9-9469-bf6ec0f08610@210.203.60.189:443?type=tcp&security=tls&fp=chrome&sni=45.32.28.232&allowInsecure=1#%F0%9F%87%B9%F0%9F%87%BC%20ShatakVPN%20652871
+trojan://96983eb4-c8f1-316e-ab00-500014ed3d8b@60.250.152.229:8443?type=tcp&security=tls&fp=chrome&sni=207.148.100.75&allowInsecure=1#%F0%9F%87%B9%F0%9F%87%BC%20ShatakVPN%20369888
