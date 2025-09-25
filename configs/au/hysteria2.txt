@@ -1,7 +1,7 @@
-hysteria2://TELEGRAM-ID-mrknowsit.TELEGRAM-ID-mrknowsit@45.13.226.246:2084?security=tls&obfs=salamander&obfs-password=ed5s8665dsss&insecure=0#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20602255
-hysteria2://2b67ONZROv%2BfRVMxB94BSw%3D%3D@5.231.70.79:443?security=tls&insecure=1&sni=bing.com#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20802835
-hysteria2://20050105zhu@204.44.110.129:51541?security=tls&insecure=1&sni=www.bing.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20610229
-hysteria2://dongtaiwang.com@208.87.243.187:22222?peer=www.bing.com&insecure=1&obfs=none#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20406454
-hysteria2://dongtaiwang.com@208.87.243.187:22222?sni=www.bing.com&insecure=1#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20549023
-hysteria2://zqmLjskPhQ@38.107.236.45:36033?security=tls&insecure=1&sni=aadcdn.msftauth.net#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20335514
-hysteria2://30c075af-9555-4671-b70e-43e3cfb2e707@111.119.232.122:7009?security=tls&insecure=1&sni=s.eans.top#%F0%9F%87%B8%F0%9F%87%AC%20ShatakVPN%20513918
+hysteria2://TELEGRAM-ID-mrknowsit.TELEGRAM-ID-mrknowsit@45.13.226.246:2084?security=tls&obfs=salamander&obfs-password=ed5s8665dsss&insecure=0#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20362871
+hysteria2://2b67ONZROv%2BfRVMxB94BSw%3D%3D@5.231.70.79:443?security=tls&insecure=1&sni=bing.com#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20532858
+hysteria2://20050105zhu@204.44.110.129:51541?security=tls&insecure=1&sni=www.bing.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20591778
+hysteria2://dongtaiwang.com@208.87.243.187:22222?peer=www.bing.com&insecure=1&obfs=none#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20115700
+hysteria2://dongtaiwang.com@208.87.243.187:22222?sni=www.bing.com&insecure=1#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20801327
+hysteria2://zqmLjskPhQ@38.107.236.45:36033?security=tls&insecure=1&sni=aadcdn.msftauth.net#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20267640
+hysteria2://30c075af-9555-4671-b70e-43e3cfb2e707@111.119.232.122:7009?security=tls&insecure=1&sni=s.eans.top#%F0%9F%87%B8%F0%9F%87%AC%20ShatakVPN%20511072
