@@ -1,7 +1,7 @@
-hysteria2://TELEGRAM-ID-mrknowsit.TELEGRAM-ID-mrknowsit@45.13.226.246:2084?security=tls&obfs=salamander&obfs-password=ed5s8665dsss&insecure=0#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20569340
-hysteria2://2b67ONZROv%2BfRVMxB94BSw%3D%3D@5.231.70.79:443?security=tls&insecure=1&sni=bing.com#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20497799
-hysteria2://20050105zhu@204.44.110.129:51541?security=tls&insecure=1&sni=www.bing.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20123683
-hysteria2://dongtaiwang.com@208.87.243.187:22222?peer=www.bing.com&insecure=1&obfs=none#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20650709
-hysteria2://dongtaiwang.com@208.87.243.187:22222?sni=www.bing.com&insecure=1#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20503364
-hysteria2://zqmLjskPhQ@38.107.236.45:36033?security=tls&insecure=1&sni=aadcdn.msftauth.net#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20824542
-hysteria2://30c075af-9555-4671-b70e-43e3cfb2e707@111.119.232.122:7009?security=tls&insecure=1&sni=s.eans.top#%F0%9F%87%B8%F0%9F%87%AC%20ShatakVPN%20445744
+hysteria2://TELEGRAM-ID-mrknowsit.TELEGRAM-ID-mrknowsit@45.13.226.246:2084?security=tls&obfs=salamander&obfs-password=ed5s8665dsss&insecure=0#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20138280
+hysteria2://2b67ONZROv%2BfRVMxB94BSw%3D%3D@5.231.70.79:443?security=tls&insecure=1&sni=bing.com#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20628817
+hysteria2://20050105zhu@204.44.110.129:51541?security=tls&insecure=1&sni=www.bing.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20507440
+hysteria2://dongtaiwang.com@208.87.243.187:22222?peer=www.bing.com&insecure=1&obfs=none#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20935654
+hysteria2://dongtaiwang.com@208.87.243.187:22222?sni=www.bing.com&insecure=1#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20478224
+hysteria2://zqmLjskPhQ@38.107.236.45:36033?security=tls&insecure=1&sni=aadcdn.msftauth.net#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20734193
+hysteria2://30c075af-9555-4671-b70e-43e3cfb2e707@111.119.232.122:7009?security=tls&insecure=1&sni=s.eans.top#%F0%9F%87%B8%F0%9F%87%AC%20ShatakVPN%20874572
