@@ -1,6 +1,6 @@
-hysteria2://dongtaiwang.com@208.87.243.187:22222?peer=www.bing.com&insecure=1&obfs=none#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20975697
-hysteria2://dongtaiwang.com@208.87.243.187:22222?sni=www.bing.com&insecure=1#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20431637
-hysteria2://zqmLjskPhQ@38.107.236.45:36033?security=tls&insecure=1&sni=aadcdn.msftauth.net#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20860402
-hysteria2://30c075af-9555-4671-b70e-43e3cfb2e707@111.119.232.122:7009?security=tls&insecure=1&sni=s.eans.top#%F0%9F%87%B8%F0%9F%87%AC%20ShatakVPN%20879973
-hysteria2://TELEGRAM-ID-mrknowsit.TELEGRAM-ID-mrknowsit@45.13.226.246:2084?security=tls&obfs=salamander&obfs-password=ed5s8665dsss&insecure=0#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20653097
-hysteria2://2b67ONZROv%2BfRVMxB94BSw%3D%3D@5.231.70.79:443?security=tls&insecure=1&sni=bing.com#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20859905
+hysteria2://30c075af-9555-4671-b70e-43e3cfb2e707@111.119.232.122:7009?security=tls&insecure=1&sni=s.eans.top#%F0%9F%87%B8%F0%9F%87%AC%20ShatakVPN%20216723
+hysteria2://dongtaiwang.com@208.87.243.187:22222?peer=www.bing.com&insecure=1&obfs=none#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20732459
+hysteria2://dongtaiwang.com@208.87.243.187:22222?sni=www.bing.com&insecure=1#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20880991
+hysteria2://zqmLjskPhQ@38.107.236.45:36033?security=tls&insecure=1&sni=aadcdn.msftauth.net#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20796755
+hysteria2://TELEGRAM-ID-mrknowsit.TELEGRAM-ID-mrknowsit@45.13.226.246:2084?security=tls&obfs=salamander&obfs-password=ed5s8665dsss&insecure=0#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20771429
+hysteria2://2b67ONZROv%2BfRVMxB94BSw%3D%3D@5.231.70.79:443?security=tls&insecure=1&sni=bing.com#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20167648
