@@ -1,4 +1,4 @@
-hysteria2://siEk2SjZFG@91.205.158.2:2083?security=tls&obfs=salamander&obfs-password=ki%28rtoko%28s-maret-khamneii&insecure=1&sni=ghasem.kotlet.org#%F0%9F%87%AC%F0%9F%87%A7%20ShatakVPN%20773288
-hysteria2://TELEGRAM-ID-conf0088.TELEGRAM-ID-conf0088@91.108.248.56:2084?security=tls&obfs=salamander&obfs-password=ed5s8665dsss&insecure=0#%F0%9F%87%B5%F0%9F%87%B1%20ShatakVPN%20250411
-hysteria2://dongtaiwang.com@208.87.243.187:22222?peer=www.bing.com&insecure=1&obfs=none#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20823840
-hysteria2://dongtaiwang.com@208.87.243.187:22222?sni=www.bing.com&insecure=1#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20336030
+hysteria2://siEk2SjZFG@91.205.158.2:2083?security=tls&obfs=salamander&obfs-password=ki%28rtoko%28s-maret-khamneii&insecure=1&sni=ghasem.kotlet.org#%F0%9F%87%AC%F0%9F%87%A7%20ShatakVPN%20453121
+hysteria2://TELEGRAM-ID-conf0088.TELEGRAM-ID-conf0088@91.108.248.56:2084?security=tls&obfs=salamander&obfs-password=ed5s8665dsss&insecure=0#%F0%9F%87%B5%F0%9F%87%B1%20ShatakVPN%20262815
+hysteria2://dongtaiwang.com@208.87.243.187:22222?peer=www.bing.com&insecure=1&obfs=none#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20606485
+hysteria2://dongtaiwang.com@208.87.243.187:22222?sni=www.bing.com&insecure=1#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20190649
