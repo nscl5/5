@@ -1,5 +1,3 @@
-trojan://biOrJGlcfX@104.20.5.134:443?path=%2Fkos-madaret-khamneii&security=tls&alpn=h2%2Chttp%2F1.1&host=ghasem.kotlet.org&fp=firefox&type=ws&sni=ghasem.kotlet.org#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20919807
-trojan://R8ufkVqwRZAgtwjyrA@193.8.124.30:443?security=tls&headerType=none&fp=chrome&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20511172
-trojan://R8ufkVqwRZAgtwjyrA@185.49.34.188:443?security=tls&headerType=none&fp=chrome&type=tcp#%F0%9F%87%AC%F0%9F%87%A7%20ShatakVPN%20426625
-trojan://1ce1df7962f71c6f@51.195.255.103:8443?security=tls&path=%2f#%F0%9F%87%AC%F0%9F%87%A7%20ShatakVPN%20767721
-trojan://1ce1df7962f71c6f@51.195.255.103:8443?security=tls&sni=uk-03.allhubb.info&type=tcp&headerType=none&path=%2f#%F0%9F%87%AC%F0%9F%87%A7%20ShatakVPN%20790914
+trojan://biOrJGlcfX@104.20.5.134:443?path=%2Fkos-madaret-khamneii&security=tls&alpn=h2%2Chttp%2F1.1&host=ghasem.kotlet.org&fp=firefox&type=ws&sni=ghasem.kotlet.org#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20474610
+trojan://auto@172.66.45.2:443?security=tls&sni=dcf741e8.epeius-2gy.pages.dev&type=ws&host=dcf741e8.epeius-2gy.pages.dev&path=%2f%3fed%3d2560#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20298153
+trojan://R3SuZDAZXDO3FYqxwK36l7gpSIBTFCxlzc89a7qg3S9p8BOCeACSFaA8nxeD2ZlT5Nl4O@217.197.160.84:443/?type=tcp&security=tls#%F0%9F%87%B8%F0%9F%87%AC%20ShatakVPN%20137810
