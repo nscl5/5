@@ -1,4 +1,4 @@
-trojan://YwuvGJk36B@104.20.5.134:2053?path=%2Fyamtekodasayahhh&security=tls&alpn=http%2F1.1&host=kotlet.arshiacomplus.dpdns.org&fp=firefox&type=ws&sni=kotlet.arshiacomplus.dpdns.org#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20301852
-trojan://biOrJGlcfX@104.20.6.134:443?path=%2Fkos-madaret-khamneii&security=tls&alpn=h2%2Chttp%2F1.1&host=ghasem.kotlet.org&fp=firefox&type=ws&sni=ghasem.kotlet.org#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20681863
-trojan://YwuvGJk36B@104.20.5.134:2053?path=%2Fyamtekodasayahhh&security=tls&alpn=http%2F1.1&host=kotlet.arshiacomplus.dpdns.org&type=ws&sni=kotlet.arshiacomplus.dpdns.org#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20913008
-trojan://YwuvGJk36B@104.20.5.134:2053?path=%2Fyamtekodasayahhh&security=tls&alpn=http%2F1.1&host=kotlet.arshiacomplus.dpdns.org&fp=chrome&type=ws&sni=kotlet.arshiacomplus.dpdns.org#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20171812
+trojan://YwuvGJk36B@104.20.5.134:2053?path=%2Fyamtekodasayahhh&security=tls&alpn=http%2F1.1&host=kotlet.arshiacomplus.dpdns.org&fp=firefox&type=ws&sni=kotlet.arshiacomplus.dpdns.org#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20190616
+trojan://biOrJGlcfX@104.20.5.134:443?path=%2Fkos-madaret-khamneii&security=tls&alpn=h2%2Chttp%2F1.1&host=ghasem.kotlet.org&fp=firefox&type=ws&sni=ghasem.kotlet.org#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20612467
+trojan://YwuvGJk36B@104.20.6.134:2053?path=%2Fyamtekodasayahhh&security=tls&alpn=http%2F1.1&host=kotlet.arshiacomplus.dpdns.org&type=ws&sni=kotlet.arshiacomplus.dpdns.org#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20654220
+trojan://YwuvGJk36B@104.20.6.134:2053?path=%2Fyamtekodasayahhh&security=tls&alpn=http%2F1.1&host=kotlet.arshiacomplus.dpdns.org&fp=chrome&type=ws&sni=kotlet.arshiacomplus.dpdns.org#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20933884
