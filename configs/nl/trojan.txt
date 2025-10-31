@@ -1,6 +1,6 @@
-trojan://er668@172.66.44.59:443?security=tls&encryption=none&fp=chrome&type=ws&path=/?ed=2048@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20847499
-trojan://D3OJA7xY5U@209.200.246.53:10785?security=reality&sni=cloudflare.com&fp=chrome&pbk=Yj8X6ZHfj6UpI7-XxFpodTIoWKiZ5TYbNWj1LQqruCY&sid=20b09680&type=grpc&path=/#%F0%9F%87%A8%F0%9F%87%A6%20ShatakVPN%20842905
-trojan://D+elR9-TfYxo.X6JVnrMw@38.54.8.233:11254/?type=tcp&security=tls&sni=fluxfloss.click#%F0%9F%87%A6%F0%9F%87%AA%20ShatakVPN%20644009
-trojan://D%2BelR9-TfYxo.X6JVnrMw@38.54.8.233:11254?security=tls&headerType=none&type=tcp&sni=fluxfloss.click#%F0%9F%87%A6%F0%9F%87%AA%20ShatakVPN%20719592
-trojan://D%2BelR9-TfYxo.X6JVnrMw@38.54.8.233:11254?security=tls&headerType=none&type=tcp&sni=fluxfloss.click#%F0%9F%87%A6%F0%9F%87%AA%20ShatakVPN%20726311
-trojan://D+elR9-TfYxo.X6JVnrMw@38.54.8.233:11254?type=tcp&security=tls&sni=fluxfloss.click#%F0%9F%87%A6%F0%9F%87%AA%20ShatakVPN%20327736
+trojan://er668@172.66.47.197:443?security=tls&encryption=none&fp=chrome&type=ws&path=/?ed=2048@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20658076
+trojan://D3OJA7xY5U@209.200.246.53:10785?security=reality&sni=cloudflare.com&fp=chrome&pbk=Yj8X6ZHfj6UpI7-XxFpodTIoWKiZ5TYbNWj1LQqruCY&sid=20b09680&type=grpc&path=/#%F0%9F%87%A8%F0%9F%87%A6%20ShatakVPN%20728496
+trojan://D+elR9-TfYxo.X6JVnrMw@38.54.8.233:11254/?type=tcp&security=tls&sni=fluxfloss.click#%F0%9F%87%A6%F0%9F%87%AA%20ShatakVPN%20354555
+trojan://D%2BelR9-TfYxo.X6JVnrMw@38.54.8.233:11254?security=tls&headerType=none&type=tcp&sni=fluxfloss.click#%F0%9F%87%A6%F0%9F%87%AA%20ShatakVPN%20726656
+trojan://D%2BelR9-TfYxo.X6JVnrMw@38.54.8.233:11254?security=tls&headerType=none&type=tcp&sni=fluxfloss.click#%F0%9F%87%A6%F0%9F%87%AA%20ShatakVPN%20237392
+trojan://D+elR9-TfYxo.X6JVnrMw@38.54.8.233:11254?type=tcp&security=tls&sni=fluxfloss.click#%F0%9F%87%A6%F0%9F%87%AA%20ShatakVPN%20472253
