@@ -1,6 +1,6 @@
-trojan://T%40_WvT8Ho%40LW%25w_%2C@172.66.47.42:2053?path=/trGPZDfetEwuO25SAs?ed=2560&security=tls&type=ws&sni=NOp-55q.pAgEs.dEv#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20286998
-trojan://er668@172.66.47.197:443?security=tls&type=ws&path=/#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20686678
-trojan://telegram-id-directvpn@35.181.212.41:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#%F0%9F%87%AB%F0%9F%87%B7%20ShatakVPN%20477845
-trojan://telegram-id-privatevpns@35.181.212.41:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#%F0%9F%87%AB%F0%9F%87%B7%20ShatakVPN%20530147
-trojan://bca467b8c15211d189008a93c7519d3b@221.128.195.7:5135?allowInsecure=0&sni=www.nintendogames.net#%F0%9F%87%A8%F0%9F%87%B3%20ShatakVPN%20680289
-trojan://bca467b8c15211d189008a93c7519d3b@221.128.195.7:5135?allowInsecure=0&sni=www.nintendogames.net#%F0%9F%87%A8%F0%9F%87%B3%20ShatakVPN%20652372
+trojan://T%40_WvT8Ho%40LW%25w_%2C@172.66.47.42:2053?path=/trGPZDfetEwuO25SAs?ed=2560&security=tls&type=ws&sni=NOp-55q.pAgEs.dEv#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20116891
+trojan://er668@172.66.47.197:443?security=tls&type=ws&path=/#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20878253
+trojan://telegram-id-directvpn@35.181.212.41:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#%F0%9F%87%AB%F0%9F%87%B7%20ShatakVPN%20449427
+trojan://telegram-id-privatevpns@35.181.212.41:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#%F0%9F%87%AB%F0%9F%87%B7%20ShatakVPN%20482086
+trojan://bca467b8c15211d189008a93c7519d3b@221.128.195.7:5135?allowInsecure=0&sni=www.nintendogames.net#%F0%9F%87%A8%F0%9F%87%B3%20ShatakVPN%20768935
+trojan://bca467b8c15211d189008a93c7519d3b@221.128.195.7:5135?allowInsecure=0&sni=www.nintendogames.net#%F0%9F%87%A8%F0%9F%87%B3%20ShatakVPN%20173165
