@@ -1,3 +1,3 @@
-trojan://T%40_WvT8Ho%40LW%25w_%2C@172.66.47.42:2053?path=/trGPZDfetEwuO25SAs?ed=2560&security=tls&type=ws&sni=NOp-55q.pAgEs.dEv#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20439129
-trojan://er668@172.66.47.197:443?security=tls&type=ws&path=/#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20131565
-trojan://bca467b8c15211d189008a93c7519d3b@221.128.195.7:5135?allowInsecure=0&sni=www.nintendogames.net#%F0%9F%87%A8%F0%9F%87%B3%20ShatakVPN%20605086
+trojan://T%40_WvT8Ho%40LW%25w_%2C@172.66.47.42:2053?path=/trGPZDfetEwuO25SAs?ed=2560&security=tls&type=ws&sni=NOp-55q.pAgEs.dEv#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20681745
+trojan://er668@172.66.47.197:443?security=tls&type=ws&path=/#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20512129
+trojan://bca467b8c15211d189008a93c7519d3b@221.128.195.7:5135?allowInsecure=0&sni=www.nintendogames.net#%F0%9F%87%A8%F0%9F%87%B3%20ShatakVPN%20656711
