@@ -1,8 +1,9 @@
-trojan://er668@172.66.47.197:443?security=tls&encryption=none&fp=chrome&type=ws&path=/?ed=2048@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20748418
-trojan://D3OJA7xY5U@209.200.246.53:10785?security=reality&sni=cloudflare.com&fp=chrome&pbk=Yj8X6ZHfj6UpI7-XxFpodTIoWKiZ5TYbNWj1LQqruCY&sid=20b09680&type=grpc&path=/#%F0%9F%87%A8%F0%9F%87%A6%20ShatakVPN%20639842
-trojan://1sbtkLK7F3@195.22.157.104:37085?path=%2Fmoshali2plus&security=tls&alpn=http%2F1.1&host=joon.arshiacomplus.dpdns.org&fp=chrome&type=httpupgrade&sni=joon.arshiacomplus.dpdns.org#%F0%9F%87%AC%F0%9F%87%A7%20ShatakVPN%20203768
-trojan://1sbtkLK7F3@195.22.157.104:37085?path=/moshali2plus&security=tls&alpn=http/1.1&host=joon.arshiacomplus.dpdns.org&fp=chrome&type=httpupgrade&sni=joon.arshiacomplus.dpdns.org#%F0%9F%87%AC%F0%9F%87%A7%20ShatakVPN%20429541
-trojan://D+elR9-TfYxo.X6JVnrMw@38.54.8.233:11254/?type=tcp&security=tls&sni=fluxfloss.click#%F0%9F%87%A6%F0%9F%87%AA%20ShatakVPN%20170394
-trojan://D%2BelR9-TfYxo.X6JVnrMw@38.54.8.233:11254?security=tls&headerType=none&type=tcp&sni=fluxfloss.click#%F0%9F%87%A6%F0%9F%87%AA%20ShatakVPN%20497759
-trojan://D%2BelR9-TfYxo.X6JVnrMw@38.54.8.233:11254?security=tls&headerType=none&type=tcp&sni=fluxfloss.click#%F0%9F%87%A6%F0%9F%87%AA%20ShatakVPN%20396740
-trojan://D+elR9-TfYxo.X6JVnrMw@38.54.8.233:11254?type=tcp&security=tls&sni=fluxfloss.click#%F0%9F%87%A6%F0%9F%87%AA%20ShatakVPN%20549087
+trojan://tunnel-astrovpn_official028@45.112.192.29:8441?security=tls&alpn=http/1.1&host=45.112.192.29&headerType=none&type=tcp#%F0%9F%87%B3%F0%9F%87%B1%20ShatakVPN%20544648
+trojan://3BLPOJr3OY@91.108.250.230:50191?security=reality&sni=cloudflare.com&fp=chrome&pbk=wJIhXHD_EuOXggJz8ad6Er_SdUUhsPg9rTYwkACmuU0&sid=2e&type=grpc&path=/#%F0%9F%87%B5%F0%9F%87%B1%20ShatakVPN%20470989
+trojan://2AAF5UEsSd@37.27.249.93:20000?security=none&type=tcp&path=/#%F0%9F%87%AB%F0%9F%87%AE%20ShatakVPN%20424990
+trojan://tunnel-astrovpn_official018@193.124.46.134:8441?security=tls&alpn=http/1.1&host=193.124.46.134&headerType=none&type=tcp#%F0%9F%87%B9%F0%9F%87%B7%20ShatakVPN%20660793
+trojan://bca467b8c15211d189008a93c7519d3b@221.128.195.7:5135?allowInsecure=0&sni=www.nintendogames.net#%F0%9F%87%A8%F0%9F%87%B3%20ShatakVPN%20258859
+trojan://D%2BelR9-TfYxo.X6JVnrMw@38.54.8.233:11254?security=tls&headerType=none&type=tcp&sni=fluxfloss.click#%F0%9F%87%A6%F0%9F%87%AA%20ShatakVPN%20313982
+trojan://D+elR9-TfYxo.X6JVnrMw@38.54.8.233:11254?type=tcp&security=tls&sni=fluxfloss.click#%F0%9F%87%A6%F0%9F%87%AA%20ShatakVPN%20476761
+trojan://D+elR9-TfYxo.X6JVnrMw@38.54.8.233:11254?security=tls&sni=fluxfloss.click&type=tcp&headerType=none&path=/#%F0%9F%87%A6%F0%9F%87%AA%20ShatakVPN%20430074
+trojan://D+elR9-TfYxo.X6JVnrMw@38.54.8.233:11254?security=tls&sni=fluxfloss.click&type=tcp&path=/#%F0%9F%87%A6%F0%9F%87%AA%20ShatakVPN%20704137
