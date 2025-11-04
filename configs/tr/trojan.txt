@@ -1,7 +1,7 @@
-trojan://er668@172.66.44.59:443?security=tls&encryption=none&fp=chrome&type=ws&path=/?ed=2048@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20145794
-trojan://YwuvGJk36B@104.20.5.134:2053?path=%2Fyamtekodasayahhh&security=tls&alpn=http%2F1.1&host=kotlet.arshiacomplus.dpdns.org&fp=firefox&type=ws&sni=kotlet.arshiacomplus.dpdns.org#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20236331
-trojan://YwuvGJk36B@104.20.5.134:2053?path=/yamtekodasayahhh&security=tls&alpn=http/1.1&host=kotlet.arshiacomplus.dpdns.org&fp=firefox&type=ws&sni=kotlet.arshiacomplus.dpdns.org#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20899546
-trojan://4f673b32-3360-4bfa-b031-54676e87d1bd@84.235.245.18:34501?path=/Free-VPN-CF-Geo-Project/84.235.245.18=34501&security=tls&host=joss.krekkrek.web.id&fp=randomized&type=ws&sni=joss.krekkrek.web.id#%F0%9F%87%A6%F0%9F%87%AA%20ShatakVPN%20320464
-trojan://D+elR9-TfYxo.X6JVnrMw@38.54.8.233:11254?security=tls&sni=fluxfloss.click&path=/#%F0%9F%87%A6%F0%9F%87%AA%20ShatakVPN%20713884
-trojan://bca467b8c15211d189008a93c7519d3b@221.128.195.9:22581?sni=www.nintendogames.net&path=/#%F0%9F%87%A8%F0%9F%87%B3%20ShatakVPN%20644249
-trojan://bca467b8c15211d189008a93c7519d3b@58.152.53.42:443?sni=www.nintendogames.net&fp=chrome&path=/#%F0%9F%87%AD%F0%9F%87%B0%20ShatakVPN%20660264
+trojan://er668@172.66.47.197:443?security=tls&encryption=none&fp=chrome&type=ws&path=/?ed=2048@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN--@HiByeVPNN#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20302889
+trojan://YwuvGJk36B@104.20.5.134:2053?path=%2Fyamtekodasayahhh&security=tls&alpn=http%2F1.1&host=kotlet.arshiacomplus.dpdns.org&fp=firefox&type=ws&sni=kotlet.arshiacomplus.dpdns.org#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20340192
+trojan://YwuvGJk36B@104.20.5.134:2053?path=/yamtekodasayahhh&security=tls&alpn=http/1.1&host=kotlet.arshiacomplus.dpdns.org&fp=firefox&type=ws&sni=kotlet.arshiacomplus.dpdns.org#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20195098
+trojan://4f673b32-3360-4bfa-b031-54676e87d1bd@84.235.245.18:34501?path=/Free-VPN-CF-Geo-Project/84.235.245.18=34501&security=tls&host=joss.krekkrek.web.id&fp=randomized&type=ws&sni=joss.krekkrek.web.id#%F0%9F%87%A6%F0%9F%87%AA%20ShatakVPN%20356844
+trojan://D+elR9-TfYxo.X6JVnrMw@38.54.8.233:11254?security=tls&sni=fluxfloss.click&path=/#%F0%9F%87%A6%F0%9F%87%AA%20ShatakVPN%20616763
+trojan://bca467b8c15211d189008a93c7519d3b@221.128.195.9:22581?sni=www.nintendogames.net&path=/#%F0%9F%87%A8%F0%9F%87%B3%20ShatakVPN%20845866
+trojan://bca467b8c15211d189008a93c7519d3b@58.152.53.42:443?sni=www.nintendogames.net&fp=chrome&path=/#%F0%9F%87%AD%F0%9F%87%B0%20ShatakVPN%20834865
