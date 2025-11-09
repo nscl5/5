@@ -1,2 +1,2 @@
-trojan://er668@172.66.44.59:443?security=tls&type=ws&path=/#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20996261
-trojan://OWB0%3DfZqvn38gjhRteQKU@149.104.92.121:16478?security=tls&host=temporaltortellini.click&headerType=none&fp=chrome&type=tcp&sni=temporaltortellini.click#%F0%9F%87%A6%F0%9F%87%B7%20ShatakVPN%20175181
+trojan://er668@172.66.47.197:443?security=tls&type=ws&path=/#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20877431
+trojan://OWB0%3DfZqvn38gjhRteQKU@149.104.92.121:16478?security=tls&host=temporaltortellini.click&headerType=none&fp=chrome&type=tcp&sni=temporaltortellini.click#%F0%9F%87%A6%F0%9F%87%B7%20ShatakVPN%20396629
