@@ -1,7 +1,5 @@
-trojan://YwuvGJk36B@104.20.5.134:2053?path=%2Fyamtekodasayahhh&security=tls&alpn=http%2F1.1&host=kotlet.arshiacomplus.dpdns.org&fp=firefox&type=ws&sni=kotlet.arshiacomplus.dpdns.org#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20727531
-trojan://YwuvGJk36B@104.20.6.134:2053?path=/yamtekodasayahhh&security=tls&alpn=http/1.1&host=kotlet.arshiacomplus.dpdns.org&fp=firefox&type=ws&sni=kotlet.arshiacomplus.dpdns.org#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20699907
-trojan://telegram-id-directvpn@63.179.217.150:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20217546
-trojan://telegram-id-privatevpns@63.179.217.150:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20846100
-trojan://telegram-id-directvpn@13.38.160.159:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#%F0%9F%87%AB%F0%9F%87%B7%20ShatakVPN%20183914
-trojan://telegram-id-privatevpns@13.38.160.159:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#%F0%9F%87%AB%F0%9F%87%B7%20ShatakVPN%20169887
-trojan://3c4e10af98c30972@23.247.137.64:443?security=tls&sni=n2.gladns.com&alpn=h2&fp=chrome&type=grpc&serviceName=db&path=/#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20334365
+trojan://YwuvGJk36B@104.20.6.134:2053?path=%2Fyamtekodasayahhh&security=tls&alpn=http%2F1.1&host=kotlet.arshiacomplus.dpdns.org&fp=firefox&type=ws&sni=kotlet.arshiacomplus.dpdns.org#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20116406
+trojan://YwuvGJk36B@104.20.5.134:2053?path=/yamtekodasayahhh&security=tls&alpn=http/1.1&host=kotlet.arshiacomplus.dpdns.org&fp=firefox&type=ws&sni=kotlet.arshiacomplus.dpdns.org#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20776091
+trojan://telegram-id-directvpn@13.38.160.159:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#%F0%9F%87%AB%F0%9F%87%B7%20ShatakVPN%20987770
+trojan://telegram-id-privatevpns@13.38.160.159:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#%F0%9F%87%AB%F0%9F%87%B7%20ShatakVPN%20496476
+trojan://3c4e10af98c30972@23.247.137.64:443?security=tls&sni=n2.gladns.com&alpn=h2&fp=chrome&type=grpc&serviceName=db&path=/#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20993905
