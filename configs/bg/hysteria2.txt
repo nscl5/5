@@ -1,1 +1,1 @@
-hysteria2://9772ecf2-6732-4bfb-a8b1-f48af577c76c@113.192.61.19:63979?security=tls&insecure=1&sni=www.bing.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20646827
+hysteria2://9772ecf2-6732-4bfb-a8b1-f48af577c76c@113.192.61.19:63979?security=tls&insecure=1&sni=www.bing.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20665381
