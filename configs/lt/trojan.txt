@@ -1,2 +1,15 @@
-trojan://YwuvGJk36B@104.20.5.134:2053?path=/yamtekodasayahhh&security=tls&alpn=http/1.1&host=kotlet.arshiacomplus.dpdns.org&fp=firefox&type=ws&sni=kotlet.arshiacomplus.dpdns.org#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20665336
-trojan://3c4e10af98c30972@23.247.137.64:443?security=tls&sni=n2.gladns.com&alpn=h2&fp=chrome&type=grpc&serviceName=db&path=/#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20461256
+trojan://14d6efcf-b0d3-4054-9d4e-e1347e3ceaa2@213.159.208.88:2053?path=/Free-VPN-CF-Geo-Project/213.159.208.88=2053&security=tls&host=joss.dus.biz.id&fp=randomized&type=ws&sni=joss.dus.biz.id#%F0%9F%87%B7%F0%9F%87%BA%20ShatakVPN%20212178
+trojan://telegram-id-directvpn@52.57.73.220:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20314945
+trojan://telegram-id-privatevpns@52.57.73.220:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20688249
+trojan://c2d6a850-7e35-44f5-ab9f-8299f6f8c72b@194.147.115.149:443?path=/Free-VPN-CF-Geo-Project/194.147.115.149=443&security=tls&host=joss.dus.biz.id&fp=randomized&type=ws&sni=joss.dus.biz.id#%F0%9F%87%B3%F0%9F%87%B1%20ShatakVPN%20710558
+trojan://8bf6e7d7-23e8-4655-8f07-c3827e2d6ebf@51.38.226.4:2053?path=/Free-VPN-CF-Geo-Project/51.38.226.4=2053&security=tls&host=joss.dus.biz.id&fp=randomized&type=ws&sni=joss.dus.biz.id#%F0%9F%87%AB%F0%9F%87%B7%20ShatakVPN%20118122
+trojan://telegram-id-directvpn@13.38.248.4:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#%F0%9F%87%AB%F0%9F%87%B7%20ShatakVPN%20154486
+trojan://telegram-id-privatevpns@13.38.248.4:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#%F0%9F%87%AB%F0%9F%87%B7%20ShatakVPN%20943230
+trojan://63b8ce6d-9a30-4122-a00f-fd47f020dc27@89.28.236.243:443?path=/Free-VPN-CF-Geo-Project/89.28.236.243=443&security=tls&host=joss.dus.biz.id&fp=randomized&type=ws&sni=joss.dus.biz.id#%F0%9F%87%A9%F0%9F%87%B0%20ShatakVPN%20799300
+trojan://telegram-id-directvpn@18.199.28.235:22223?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20595492
+trojan://telegram-id-privatevpns@18.199.28.235:22222?security=tls&alpn=http/1.1&headerType=none&type=tcp&sni=trojan.burgerip.co.uk#%F0%9F%87%A9%F0%9F%87%AA%20ShatakVPN%20738526
+trojan://19f8e29a-3f0b-448c-92e8-ae035ea5f9ba@45.159.251.8:81?path=/Free-VPN-CF-Geo-Project/45.159.251.8=81&security=tls&host=joss.dus.biz.id&fp=randomized&type=ws&sni=joss.dus.biz.id#%F0%9F%87%B5%F0%9F%87%B9%20ShatakVPN%20561790
+trojan://49d416e1-4cec-41e1-bff6-3748c466f275@45.144.48.158:8443?path=/Free-VPN-CF-Geo-Project/45.144.48.158=8443&security=tls&host=joss.dus.biz.id&fp=randomized&type=ws&sni=joss.dus.biz.id#%F0%9F%87%B5%F0%9F%87%B1%20ShatakVPN%20208812
+trojan://6b5b50ff-7798-40dc-9888-b4dd581e5435@51.89.128.93:44004?path=/Free-VPN-CF-Geo-Project/51.89.128.93=44004&security=tls&host=joss.dus.biz.id&fp=randomized&type=ws&sni=joss.dus.biz.id#%F0%9F%87%AC%F0%9F%87%A7%20ShatakVPN%20495900
+trojan://a5a3350e-6ea2-4e12-ae84-20db849ce1fc@94.131.114.50:81?path=/Free-VPN-CF-Geo-Project/94.131.114.50=81&security=tls&host=joss.dus.biz.id&fp=randomized&type=ws&sni=joss.dus.biz.id#%F0%9F%87%AE%F0%9F%87%B1%20ShatakVPN%20266781
+trojan://1b57001bd214304027025a740b6cf1ac@221.128.195.12:3841?sni=www.nintendogames.net&fp=chrome&path=/#%F0%9F%87%A8%F0%9F%87%B3%20ShatakVPN%20786655
