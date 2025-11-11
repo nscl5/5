@@ -1,8 +1,8 @@
-hy2://9ec830fd-79da-4706-a964-cb227d7198db@135.148.82.248:33333/?insecure=1#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20977046
-hy2://dongtaiwang.com@208.87.243.187:22222/?insecure=1&sni=%F0%9F%94%92#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20923005
-hysteria2://537d7098-fdbe-11ef-8ebc-f23c93141fad@107.167.18.123:1743?security=tls&insecure=1&sni=14ff4864-t4x400-tcjtj6-d70y.la.shifen.uk#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20767592
-hysteria2://9772ecf2-6732-4bfb-a8b1-f48af577c76c@113.192.61.19:63979?security=tls&insecure=1&sni=www.bing.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20659720
-hy2://9772ecf2-6732-4bfb-a8b1-f48af577c76c@113.192.61.19:63979/?insecure=1&sni=www.bing.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20398358
-hysteria2://9772ecf2-6732-4bfb-a8b1-f48af577c76c@113.192.61.19:63979?security=tls&insecure=1&sni=www.bing.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20436476
-hy2://dongtaiwang.com@51.158.218.2:50066/?insecure=1&sni=www.bing.com#%F0%9F%87%B3%F0%9F%87%B1%20ShatakVPN%20786206
-hysteria2://dongtaiwang.com@163.172.21.105:5355?security=tls&insecure=1&sni=www.bing.com#%F0%9F%87%AB%F0%9F%87%B7%20ShatakVPN%20925212
+hy2://9ec830fd-79da-4706-a964-cb227d7198db@135.148.82.248:33333/?insecure=1#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20940689
+hysteria2://537d7098-fdbe-11ef-8ebc-f23c93141fad@107.167.18.123:1743?security=tls&insecure=1&sni=14ff4864-t4x400-tcjtj6-d70y.la.shifen.uk#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20756239
+hy2://dongtaiwang.com@208.87.243.187:22222/?insecure=1&sni=%F0%9F%94%92#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20799368
+hysteria2://9772ecf2-6732-4bfb-a8b1-f48af577c76c@113.192.61.19:63979?security=tls&insecure=1&sni=www.bing.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20363764
+hy2://9772ecf2-6732-4bfb-a8b1-f48af577c76c@113.192.61.19:63979/?insecure=1&sni=www.bing.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20452408
+hysteria2://9772ecf2-6732-4bfb-a8b1-f48af577c76c@113.192.61.19:63979?security=tls&insecure=1&sni=www.bing.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20351807
+hy2://dongtaiwang.com@51.158.218.2:50066/?insecure=1&sni=www.bing.com#%F0%9F%87%B3%F0%9F%87%B1%20ShatakVPN%20657269
+hysteria2://dongtaiwang.com@163.172.21.105:5355?security=tls&insecure=1&sni=www.bing.com#%F0%9F%87%AB%F0%9F%87%B7%20ShatakVPN%20483197
