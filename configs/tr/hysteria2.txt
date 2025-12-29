@@ -1,8 +1,8 @@
-hy2://dongtaiwang.com@208.87.243.187:22222/?insecure=1&sni=%F0%9F%94%92#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20216075
-hysteria2://dongtaiwang.com@208.87.243.187:22222?insecure=1&sni=%F0%9F%94%92#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20866177
-hysteria2://dongtaiwang.com@208.87.243.187:22222?insecure=1&sni=www.bing.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20806924
-hysteria2://17cdeb6c-f046-11ee-bdac-f23c93141fad@107.167.18.123:1743?security=tls&sni=c37b0be5-t3kyo0-t3lvgh-2gok.la.shifen.uk#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20677304
-hysteria2://17cdeb6c-f046-11ee-bdac-f23c93141fad@107.167.18.123:1743?security=tls&sni=c37b0be5-t3kyo0-t3lvgh-2gok.la.shifen.uk#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20977655
-hysteria2://37afff84-34bd-4db6-b24a-7d73d2ed48ce@198.23.130.211:25000?insecure=1&sni=api.push.apple.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20729576
-hysteria2://37afff84-34bd-4db6-b24a-7d73d2ed48ce@107.173.127.166:25000?insecure=1&sni=www.apple.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20100056
-hysteria2://ae845cbd-08fb-4346-929a-e28a6f3960a8@181.215.18.71:24591?insecure=1&sni=hk1.shiyuandian.shop#%F0%9F%87%AD%F0%9F%87%B0%20ShatakVPN%20645696
+hy2://dongtaiwang.com@208.87.243.187:22222/?insecure=1&sni=%F0%9F%94%92#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20340611
+hysteria2://dongtaiwang.com@208.87.243.187:22222?insecure=1&sni=%F0%9F%94%92#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20664184
+hysteria2://dongtaiwang.com@208.87.243.187:22222?insecure=1&sni=www.bing.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20662997
+hysteria2://17cdeb6c-f046-11ee-bdac-f23c93141fad@107.167.18.123:1743?security=tls&sni=c37b0be5-t3kyo0-t3lvgh-2gok.la.shifen.uk#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20463100
+hysteria2://17cdeb6c-f046-11ee-bdac-f23c93141fad@107.167.18.123:1743?security=tls&sni=c37b0be5-t3kyo0-t3lvgh-2gok.la.shifen.uk#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20334010
+hysteria2://37afff84-34bd-4db6-b24a-7d73d2ed48ce@198.23.130.211:25000?insecure=1&sni=api.push.apple.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20268416
+hysteria2://37afff84-34bd-4db6-b24a-7d73d2ed48ce@107.173.127.166:25000?insecure=1&sni=www.apple.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20272731
+hysteria2://ae845cbd-08fb-4346-929a-e28a6f3960a8@181.215.18.71:24591?insecure=1&sni=hk1.shiyuandian.shop#%F0%9F%87%AD%F0%9F%87%B0%20ShatakVPN%20999907
