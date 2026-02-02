@@ -1,5 +1,9 @@
-hysteria2://Yet-Another-Public-Config-1@206.71.158.37:35200?obfs=salamander&obfs-password=Yet-Another-Public-Config-1&sni=YAPC-1.afshin.ir#%F0%9F%87%B3%F0%9F%87%B1%20ShatakVPN%20786184
-hysteria2://Yet-Another-Public-Config-1@206.71.158.37:36300?obfs=salamander&obfs-password=Yet-Another-Public-Config-1&sni=YAPC-1.afshin.ir#%F0%9F%87%B3%F0%9F%87%B1%20ShatakVPN%20932814
-hysteria2://Yet-Another-Public-Config-1@206.71.158.37:36400?obfs=salamander&obfs-password=Yet-Another-Public-Config-1&sni=YAPC-1.afshin.ir#%F0%9F%87%B3%F0%9F%87%B1%20ShatakVPN%20877312
-hysteria2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@206.71.158.41:35000?security=tls&obfs=salamander&obfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi&insecure=0&sni=api.kermanshahi.org#%F0%9F%87%B3%F0%9F%87%B1%20ShatakVPN%20299724
-hysteria2://37afff84-34bd-4db6-b24a-7d73d2ed48ce@107.173.127.166:25000?insecure=1&sni=www.apple.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20280183
+hysteria2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@206.71.158.40:35000?security=tls&obfs=salamander&obfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi&insecure=0&sni=api.kermanshahi.org#%F0%9F%87%B3%F0%9F%87%B1%20ShatakVPN%20113593
+hysteria2://b4bd0613-ff7c-4f2f-954d-185915e6ddad@206.71.158.41:35000?security=tls&obfs=salamander&obfs-password=%40JavidnamanIran-Javid-SHAH-KingRezaPahlavi&insecure=0&sni=api.kermanshahi.org#%F0%9F%87%B3%F0%9F%87%B1%20ShatakVPN%20546512
+hysteria2://37afff84-34bd-4db6-b24a-7d73d2ed48ce@107.173.127.166:25000?insecure=1&sni=www.apple.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20976827
+hy2://2c833c5d-cbcc-4afb-89ba-d17dc39db6f0@75.127.13.83:47974/?insecure=1&sni=www.bing.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20713884
+hysteria2://2c833c5d-cbcc-4afb-89ba-d17dc39db6f0@75.127.13.83:47974?insecure=1&sni=www.bing.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20533166
+hysteria2://37afff84-34bd-4db6-b24a-7d73d2ed48ce@198.23.130.211:25000?insecure=1&sni=api.push.apple.com#%F0%9F%87%BA%F0%9F%87%B8%20ShatakVPN%20852979
+hysteria2://ae845cbd-08fb-4346-929a-e28a6f3960a8@147.45.49.111:24591?insecure=1&sni=hk1.shiyuandian.shop#%F0%9F%87%AF%F0%9F%87%B5%20ShatakVPN%20996433
+hy2://9c23940e-efd8-4763-bfb5-54739b50893d@156.226.173.8:8443/?insecure=1&sni=hy5.hy2yydsapi.top#%F0%9F%87%AD%F0%9F%87%B0%20ShatakVPN%20495399
+hysteria2://9c23940e-efd8-4763-bfb5-54739b50893d@156.226.173.8:8443?insecure=1&sni=hy5.hy2yydsapi.top#%F0%9F%87%AD%F0%9F%87%B0%20ShatakVPN%20841695
