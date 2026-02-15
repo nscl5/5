@@ -1,3 +1,2 @@
-https://140.82.112.3:443/4n0nymou3#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20910317
-https://149.154.167.99:443/BXAMbot#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20438622
-https://149.154.167.99:443/NetZoneNews&security=tls&encryption=none&insecure=0&host=sni.111000.indevs.in&type=ws&allowInsecure=0&sni=sni.111000.indevs.in#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20155705
+https://149.154.167.99:443/BXAMbot#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20432962
+https://140.82.114.4:443/4n0nymou3#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20380886
