@@ -1,2 +1,1 @@
-hy2://1y4HweESOT@107.175.6.241:27995/?insecure=1&sni=azure.microsoft.com#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20155826
-hy2://zhangyang@130.61.50.75:6443/#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20721352
+hy2://zhangyang@130.61.50.75:6443/#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20196915
