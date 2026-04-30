@@ -1,1 +1,2 @@
-hy2://123456789StrongPass@144.31.224.14:443/?insecure=1&sni=www.cloudflare.com#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20314340
+hy2://123456789StrongPass@144.31.224.14:443/?insecure=1&sni=www.cloudflare.com#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20796803
+hysteria2://qQe1z5kU8kN6SlKnDt9Ru3Qp@3.66.232.52:443/?insecure=1&sni=vpn-de-002.fastervpn.world#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20637825
