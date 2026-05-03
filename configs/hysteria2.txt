@@ -1,6 +1,6 @@
-hysteria2://4d092122-268a-4a1a-b23f-83931c5abc3a@37.114.49.38:2056/?insecure=1&sni=flkf.mangshe.xyz#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20561361
-hysteria2://qQe1z5kU8kN6SlKnDt9Ru3Qp@18.117.103.156:443/?insecure=1&sni=vpn-us-003.fastervpn.world#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20525874
-hysteria2://dongtaiwang.com@163.172.113.118:40022/?insecure=1&sni=www.microsoft.com#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20769421
-hy2://123456789StrongPass@144.31.224.14:443/?insecure=1&sni=www.cloudflare.com#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20255382
-hysteria2://qQe1z5kU8kN6SlKnDt9Ru3Qp@13.212.200.61:443/?insecure=1&sni=vpn-sg-002.fastervpn.world#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20453235
-hysteria2://qQe1z5kU8kN6SlKnDt9Ru3Qp@180.93.164.252:443/?insecure=1&sni=vpn-vn-001.fastervpn.world#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20191114
+hysteria2://dongtaiwang.com@163.172.113.118:40022/?insecure=1&sni=www.microsoft.com#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20957348
+hysteria2://4d092122-268a-4a1a-b23f-83931c5abc3a@37.114.49.38:2056/?insecure=1&sni=flkf.mangshe.xyz#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20400874
+hysteria2://qQe1z5kU8kN6SlKnDt9Ru3Qp@13.229.117.201:443/?insecure=1&sni=vpn-sg-002.fastervpn.world#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20934413
+hy2://123456789StrongPass@144.31.224.14:443/?insecure=1&sni=www.cloudflare.com#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20647340
+hysteria2://qQe1z5kU8kN6SlKnDt9Ru3Qp@16.59.129.155:443/?insecure=1&sni=vpn-us-003.fastervpn.world#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20813860
+hysteria2://qQe1z5kU8kN6SlKnDt9Ru3Qp@180.93.164.252:443/?insecure=1&sni=vpn-vn-001.fastervpn.world#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20358197
