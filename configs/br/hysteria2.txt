@@ -1,4 +1,4 @@
-hysteria2://dongtaiwang.com@62.210.124.146:22000/?insecure=1&sni=www.microsoft.com#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20401546
-hysteria2://dongtaiwang.com@62.210.124.146:22000?insecure=1&sni=www.microsoft.com#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20159755
-hysteria2://940f51d6-e0a4-4add-b96b-328e4a84b642@140.245.27.220:51000/?insecure=1&sni=cn.cremedelamer.com#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20876883
-hysteria2://940f51d6-e0a4-4add-b96b-328e4a84b642@140.245.27.220:51000?insecure=1&sni=cn.cremedelamer.com#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20711134
+hysteria2://dongtaiwang.com@62.210.124.146:22000/?insecure=1&sni=www.microsoft.com#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20352499
+hysteria2://dongtaiwang.com@62.210.124.146:22000?insecure=1&sni=www.microsoft.com#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20812464
+hysteria2://940f51d6-e0a4-4add-b96b-328e4a84b642@140.245.27.220:51000/?insecure=1&sni=cn.cremedelamer.com#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20293895
+hysteria2://940f51d6-e0a4-4add-b96b-328e4a84b642@140.245.27.220:51000?insecure=1&sni=cn.cremedelamer.com#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20893929
