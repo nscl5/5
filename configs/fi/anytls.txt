@@ -1,1 +1,1 @@
-anytls://140.82.116.4:443/Alvin9999-newpac/fanqiang@anytls2.934618.xyz:22880?security=tls&type=tcp&packetEncoding=none&sni=anytls2.934618.xyz&udp=1&username=github.com%2FAlvin9999-newpac%2Ffanqiang#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20570220
+anytls://140.82.116.4:443/Alvin9999-newpac/fanqiang@anytls2.934618.xyz:22880?security=tls&type=tcp&packetEncoding=none&sni=anytls2.934618.xyz&udp=1&username=github.com%2FAlvin9999-newpac%2Ffanqiang#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20514364
